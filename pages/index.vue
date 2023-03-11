@@ -6,7 +6,9 @@
         <div id="blur"></div>
       </div>
 
-      <!-- <div class="container mx-auto px-6"></div> -->
+      <div class="container mx-auto px-6">
+        <!-- <UiTypography -->
+      </div>
     </div>
   </div>
 </template>
