@@ -1,15 +1,23 @@
 <template>
   <div>
-    <div class="bg-accent h-screen relative">
+    <header class="bg-accent md:h-screen h-screen-75 relative">
       <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
-        <div id="blob" class="mr-8 absolute"></div>
+        <div id="blob" class="mr-10 absolute h-3/5"></div>
         <div id="blur"></div>
       </div>
 
-      <div class="container mx-auto px-6">
-        <!-- <UiTypography -->
+      <div class="text-white absolute top-0 z-10 h-full w-full">
+        <div class="container mx-auto flex items-center h-full px-6">
+          <div class="grid gap-5">
+            <UiTypographyH1>
+              Unleashing <br> Innovation <br> with <br> Seasoned <br> Expertise
+            </UiTypographyH1>
+            <UiTypographyP>Empowering Your Vision, Inspiring Your Success.</UiTypographyP>
+            <UiButtonsPrimary>Get in touch</UiButtonsPrimary>
+          </div>
+        </div>
       </div>
-    </div>
+    </header>
   </div>
 </template>
 <script>
@@ -21,11 +29,10 @@ export default {
 
 
 #blob {
-  height: 34vmax;
   aspect-ratio: 1;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   background: linear-gradient(to right, #058182, white);
-  animation: rotate 10s infinite linear;
+  animation: rotate 5s infinite linear;
   opacity: 0.8;
 }
 
