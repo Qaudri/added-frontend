@@ -2,7 +2,7 @@
   <div>
     <header class="bg-accent md:h-screen h-screen-75 relative">
       <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
-        <div id="blob" class="mr-10 absolute h-3/5"></div>
+        <div id="blob" class="mr-10 absolute h-2/5"></div>
         <div id="blur"></div>
       </div>
 
@@ -34,6 +34,7 @@ export default {
   background: linear-gradient(to right, #058182, white);
   animation: rotate 5s infinite linear;
   opacity: 0.8;
+  position: absolute;
 }
 
 @keyframes rotate {
