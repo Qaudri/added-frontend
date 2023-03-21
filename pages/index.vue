@@ -2,22 +2,28 @@
   <div>
     <header class="bg-accent md:h-screen h-screen-75 relative">
       <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
-        <div id="blob" class="mr-10 absolute h-2/5"></div>
+        <div id="blob" class="mr-10 absolute h-3/5"></div>
         <div id="blur"></div>
       </div>
 
-      <div class="text-white absolute top-0 z-10 h-full w-full">
-        <div class="container mx-auto flex items-center h-full px-6">
-          <div class="grid gap-5">
+      <div class="text-white absolute top-0 z-10 h-full w-full flex">
+        <div class="container mx-auto justify-between flex items-center h-full px-6">
+          <div class="grid gap-5 w-2/3">
             <UiTypographyH1>
               Unleashing <br> Innovation <br> with <br> Seasoned <br> Expertise
             </UiTypographyH1>
             <UiTypographyP>Empowering Your Vision, Inspiring Your Success.</UiTypographyP>
             <UiButtonsPrimary>Get in touch</UiButtonsPrimary>
           </div>
+          <div class="h-full w-1/3">
+            <iframe src='https://my.spline.design/untitled-ab9d279763d37f709d725c5e9bd6903e/' frameborder='0' width='100%' height='100%'></iframe> 
+          </div>
         </div>
       </div>
     </header>
+    <section aria-label class="py-10 container mx-auto">
+    
+    </section>
   </div>
 </template>
 <script>
