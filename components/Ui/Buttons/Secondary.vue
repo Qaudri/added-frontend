@@ -9,7 +9,8 @@
 <script>
 export default {
   props: {
-    flexdisplay: Boolean
+    flexdisplay: Boolean,
+    standout: Boolean
   },
   
   methods: {
