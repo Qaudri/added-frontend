@@ -73,7 +73,12 @@
         </div>
 
         <div class="h-36 w-full grid place-items-center">
-          <UiButtonsTertiary>Learn More</UiButtonsTertiary>
+          <UiButtonsSecondary class="group">
+            <div class="flex align-center gap-2 group-hover:gap-3 duration-300 ease-in-out">
+              <UiTypographyP>Learn More</UiTypographyP>
+              <IconsNext class="w-5"/>
+            </div>
+          </UiButtonsSecondary>
         </div>
 
       </div>
