@@ -8,27 +8,28 @@
 
       <div class="text-white absolute top-0 z-10 h-full w-full flex">
         <div class="container mx-auto justify-between flex items-center h-full px-6">
-          <div class="grid gap-5 w-2/3">
+          <div class="grid gap-5 w-full md:w-2/3">
             <UiTypographyH1>
               Unleashing <br> Innovation <br> with <br> Seasoned <br> Expertise
             </UiTypographyH1>
             <UiTypographyP>Empowering Your Vision, Inspiring Your Success.</UiTypographyP>
             <UiButtonsPrimary>Get in touch</UiButtonsPrimary>
           </div>
-          <div class="h-full w-1/3">
+          <div class="h-full w-1/3 hidden md:block">
             <iframe src='https://my.spline.design/untitled-ab9d279763d37f709d725c5e9bd6903e/' frameborder='0' width='100%' height='100%'></iframe>
           </div>
         </div>
       </div>
     </header>
-    <section aria-labelledby="section-title" class="py-16 container mx-auto px-6">
-      <div class="grid grid-cols-3 gap-5">    
 
-        <UiTypographyH2 id="section-title" class="uppercase text-accent font-bold">Our Services</UiTypographyH2>
+    <section aria-labelledby="section-title" class="py-16 container mx-auto px-6">
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">    
+
+        <UiTypographyH2 id="section-title" class="uppercase text-accent">Our Services</UiTypographyH2>
         <UiTypographyP>We specialize in providing customized solutions to help our clients achieve their goals. Whether you're looking to improve your brand strategy, streamline your processes, or enhance your digital presence, we're here to help.
         </UiTypographyP>
 
-        <div class="bg-img row-span-3 w-full h-full"></div>
+        <div class="bg-img row-span-3 w-full h-full hidden md:block"></div>
 
         <div class="h-36 w-full border grid place-items-center">
           <div>
@@ -72,10 +73,11 @@
           </div>
         </div>
 
-        <div class="h-36 w-full grid place-items-center">
+        <div class="md:h-36 w-full grid place-items-center col-span-2 md:col-span-1">
           <UiButtonsSecondary class="group">
-            <div class="flex align-center gap-2 group-hover:gap-3 duration-300 ease-in-out">
+            <div class="flex align-center gap-2 group-hover:gap-4 duration-300 ease-in-out">
               <UiTypographyP>Learn More</UiTypographyP>
+
               <IconsNext class="w-5"/>
             </div>
           </UiButtonsSecondary>
