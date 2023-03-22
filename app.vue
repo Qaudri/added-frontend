@@ -12,15 +12,17 @@
 </script>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: Poppins;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *::-webkit-scrollbar {
   width:8px;
-  background-color: transparent;
   cursor: pointer;
 }
 
@@ -28,5 +30,6 @@
   width:8px;
   background-color: #058182;
   cursor: pointer;
+  border-radius: 50px;
 }
 </style>

@@ -16,13 +16,68 @@
             <UiButtonsPrimary>Get in touch</UiButtonsPrimary>
           </div>
           <div class="h-full w-1/3">
-            <iframe src='https://my.spline.design/untitled-ab9d279763d37f709d725c5e9bd6903e/' frameborder='0' width='100%' height='100%'></iframe> 
+            <iframe src='https://my.spline.design/untitled-ab9d279763d37f709d725c5e9bd6903e/' frameborder='0' width='100%' height='100%'></iframe>
           </div>
         </div>
       </div>
     </header>
-    <section aria-label class="py-10 container mx-auto">
-    
+    <section aria-labelledby="section-title" class="py-16 container mx-auto px-6">
+      <div class="grid grid-cols-3 gap-5">    
+
+        <UiTypographyH2 id="section-title" class="uppercase text-accent font-bold">Our Services</UiTypographyH2>
+        <UiTypographyP>We specialize in providing customized solutions to help our clients achieve their goals. Whether you're looking to improve your brand strategy, streamline your processes, or enhance your digital presence, we're here to help.
+        </UiTypographyP>
+
+        <div class="bg-img row-span-3 w-full h-full"></div>
+
+        <div class="h-36 w-full border grid place-items-center">
+          <div>
+            <img src="@/assets/images/services/strategy.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
+            <UiTypographyH3 class="text-center">Strategy</UiTypographyH3>
+          </div>
+        </div>
+
+        <div class="h-36 w-full border grid place-items-center">
+          <div>
+            <img src="@/assets/images/services/consultancy.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
+            <UiTypographyH3 class="text-center">Consultancy</UiTypographyH3>
+          </div>
+        </div>
+
+        <div class="h-36 w-full border grid place-items-center">
+          <div>
+            <img src="@/assets/images/services/design.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
+            <UiTypographyH3 class="text-center">Design & Development</UiTypographyH3>
+          </div>
+        </div>
+
+        <div class="h-36 w-full border grid place-items-center">
+          <div>
+            <img src="@/assets/images/services/web.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
+            <UiTypographyH3 class="text-center">Web</UiTypographyH3>
+          </div>
+        </div>
+
+        <div class="h-36 w-full border grid place-items-center">
+          <div>
+            <img src="@/assets/images/services/motion.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
+            <UiTypographyH3 class="text-center">Motion & 3D</UiTypographyH3>
+          </div>
+        </div>
+
+        <div class="h-36 w-full border grid place-items-center">
+          <div>
+            <img src="@/assets/images/services/social.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
+            <UiTypographyH3 class="text-center">Social Media</UiTypographyH3>
+          </div>
+        </div>
+
+        <div class="h-36 w-full grid place-items-center">
+          <UiButtonsTertiary>Learn More</UiButtonsTertiary>
+        </div>
+
+      </div>
+
     </section>
   </div>
 </template>
@@ -64,6 +119,13 @@ export default {
   top: 0;
   z-index: 2;
   backdrop-filter: blur(12vmax);
+}
+
+.bg-img {
+  background: url('../assets/images/service.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 </style>
