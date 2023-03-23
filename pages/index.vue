@@ -1,13 +1,13 @@
 <template>
   <div>
-    <header class="bg-accent md:h-screen h-screen-75 relative">
+    <header class="bg-accent md:h-screen relative h-[30rem]">
       <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
-        <div id="blob" class="mr-10 absolute h-3/5"></div>
+        <div id="blob" class="mr-16 md:mr-10 absolute h-2/5 md:h-3/5"></div>
         <div id="blur"></div>
       </div>
 
       <div class="text-white absolute top-0 z-10 h-full w-full flex">
-        <div class="container mx-auto justify-between flex items-center h-full px-6">
+        <div class="container mx-auto justify-between flex items-end pb-16 md:pb-0 md:items-center h-full px-6">
           <div class="grid gap-5 w-full md:w-2/3">
             <UiTypographyH1>
               Unleashing <br> Innovation <br> with <br> Seasoned <br> Expertise
@@ -48,7 +48,7 @@
         <div class="h-36 w-full border grid place-items-center">
           <div>
             <img src="@/assets/images/services/design.svg" class="w-14 h-14 mb-2 mx-auto" alt="">
-            <UiTypographyH3 class="text-center">Design & Development</UiTypographyH3>
+            <UiTypographyH3 class="text-center">Branding</UiTypographyH3>
           </div>
         </div>
 
