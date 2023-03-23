@@ -54,7 +54,7 @@ export default {
       } else {
         this.color = true
       }
-    }, 1000);
+    }, 50);
   }
 }
 </script>
