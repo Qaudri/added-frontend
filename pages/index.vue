@@ -75,7 +75,7 @@
 
         <div class="md:h-36 w-full grid place-items-center col-span-2 md:col-span-1">
           <UiButtonsSecondary class="group">
-            <div class="flex align-center gap-2 group-hover:gap-4 duration-300 ease-in-out">
+            <div class="flex align-center gap-2 group-hover:gap-4 duration-150 ease-in-out">
               <UiTypographyP>Learn More</UiTypographyP>
 
               <IconsNext class="w-5"/>
@@ -86,16 +86,72 @@
       </div>
 
     </section>
+
+    <section class="py-16 ">
+      <div class="grid grid-cols-4 gap-5 justify-center mb-5 container mx-auto px-6">
+        <UiTypographyH2 id="section-title" class="uppercase text-accent">Our Services</UiTypographyH2>
+        <UiTypographyP>We specialize in providing customized solutions to help our clients achieve their goals. Whether you're looking to improve your brand strategy, streamline your processes, or enhance your digital presence, we're here to help.
+        </UiTypographyP>
+      </div>
+
+      <div class="mt-10 overflow-hidden w-full absolute container">
+        <div class="content flex gap-5">
+          <div class="box border bg-blue-500 p-20"></div>
+          <div class="box border bg-green-400 p-20"></div>
+          <div class="box border bg-red-600 p-20"></div>
+          <div class="box border bg-purple-600 p-20"></div>
+          <div class="box border bg-yellow-400 p-20"></div>
+          <div class="box border bg-slate-500 p-20"></div>
+          <div class="box border bg-cyan-500 p-20"></div>
+          <div class="box border bg-primary p-20"></div>
+        </div>
+      </div>
+
+    </section>
   </div>
 </template>
 <script>
 export default {
-  
+  data() {
+    return {
+      scrollEnabled: false,
+    };
+  },
+
+  mounted() {
+    // Add an event listener for the scroll event
+    window.addEventListener('scroll', this.handleScroll);
+  },
+
+  beforeDestroy() {
+    // Remove the event listener when the component is destroyed
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+
+  methods: {
+    // handleScroll() {
+    //   const container = document.querySelector('.container');
+    //   const content = document.querySelector('.content');
+    //   const containerRect = container.getBoundingClientRect();
+    //   const contentRect = content.getBoundingClientRect();
+    //   const containerCenter = containerRect.top + containerRect.height / 2;
+    //   const contentCenter = contentRect.top + contentRect.height / 2;
+    //   // Check if the content is in the center of the container
+    //   if (!this.scrollEnabled && contentCenter >= containerCenter) {
+    //     // Enable horizontal scrolling
+    //     this.scrollEnabled = true;
+    //     content.style.overflowX = 'auto';
+    //   }
+    //   // Set the horizontal scroll position of the content based on the vertical scroll position
+    //   if (this.scrollEnabled) {
+    //     const scrollPosition = window.scrollY;
+    //     content.style.transform = `translateX(-${scrollPosition}px)`;
+    //   }
+    // },
+  },
 }
 </script>
 <style>
-
-
 #blob {
   aspect-ratio: 1;
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
