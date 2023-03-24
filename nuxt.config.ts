@@ -4,4 +4,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss'
   ],
 
+  plugins: ['~/plugins/locomotive-scroll'],
+
 })
