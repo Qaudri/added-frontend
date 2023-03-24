@@ -94,16 +94,16 @@
         </UiTypographyP>
       </div>
 
-      <div class="mt-10 overflow-hidden w-full absolute container">
+      <div class="mt-10 overflow-hidden w-full absolute container h-screen">
         <div class="content flex gap-5">
-          <div class="box border bg-blue-500 p-20"></div>
-          <div class="box border bg-green-400 p-20"></div>
-          <div class="box border bg-red-600 p-20"></div>
-          <div class="box border bg-purple-600 p-20"></div>
-          <div class="box border bg-yellow-400 p-20"></div>
-          <div class="box border bg-slate-500 p-20"></div>
-          <div class="box border bg-cyan-500 p-20"></div>
-          <div class="box border bg-primary p-20"></div>
+          <div class="box border bg-blue-500 p-64"></div>
+          <div class="box border bg-green-400 p-64"></div>
+          <div class="box border bg-red-600 p-64"></div>
+          <div class="box border bg-purple-600 p-64"></div>
+          <div class="box border bg-yellow-400 p-64"></div>
+          <div class="box border bg-slate-500 p-64"></div>
+          <div class="box border bg-cyan-500 p-64"></div>
+          <div class="box border bg-primary p-64"></div>
         </div>
       </div>
 
@@ -112,43 +112,6 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      scrollEnabled: false,
-    };
-  },
-
-  mounted() {
-    // Add an event listener for the scroll event
-    window.addEventListener('scroll', this.handleScroll);
-  },
-
-  beforeDestroy() {
-    // Remove the event listener when the component is destroyed
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-
-  methods: {
-    // handleScroll() {
-    //   const container = document.querySelector('.container');
-    //   const content = document.querySelector('.content');
-    //   const containerRect = container.getBoundingClientRect();
-    //   const contentRect = content.getBoundingClientRect();
-    //   const containerCenter = containerRect.top + containerRect.height / 2;
-    //   const contentCenter = contentRect.top + contentRect.height / 2;
-    //   // Check if the content is in the center of the container
-    //   if (!this.scrollEnabled && contentCenter >= containerCenter) {
-    //     // Enable horizontal scrolling
-    //     this.scrollEnabled = true;
-    //     content.style.overflowX = 'auto';
-    //   }
-    //   // Set the horizontal scroll position of the content based on the vertical scroll position
-    //   if (this.scrollEnabled) {
-    //     const scrollPosition = window.scrollY;
-    //     content.style.transform = `translateX(-${scrollPosition}px)`;
-    //   }
-    // },
-  },
 }
 </script>
 <style>

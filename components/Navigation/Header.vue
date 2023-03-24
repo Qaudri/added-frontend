@@ -33,6 +33,8 @@
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   data() {
     return {
@@ -48,13 +50,13 @@ export default {
   },
 
   created(){
-    setTimeout(() => {
+    if (process.browser){
       if (window.innerWidth <= 640) {
         this.color = false
       } else {
         this.color = true
       }
-    }, 50);
+    };
   }
 }
 </script>
