@@ -1,6 +1,6 @@
 <template>
   <div class="select-none">
-    <NavigationHeader />
+    <NavigationNavBar />
       <slot />
     <NavigationFooter />
   </div>
