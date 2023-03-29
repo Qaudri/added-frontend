@@ -10,16 +10,16 @@
       <nav :class="menu_revealed ? 'translate-x-0' : '-translate-x-full'" class="md:h-fit z-100 md:static md:bg-transparent w-full md:w-fit fixed h-screen left-0 top-[65.5px] md:top duration-150 ease-in-out md:translate-x-0 bg-white">
         <ul class="grid grid-cols-1 place-items-center md:flex gap-5 md:gap-3 lg:gap-5 items-center px-6 pt-20 md:p-0">
           <li>
-            <UiButtonsTertiary :white_text="color" class="text-white">Projects</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color" class="text-white">Projects</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary :white_text="color">Marketplace</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color">Marketplace</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary :white_text="color">Find Artisans</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color">Find Artisans</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary :white_text="color" @clicked="$router.push({path: '/login'})">Sign In</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color" @clicked="$router.push({path: '/login'})">Sign In</UiButtonsTertiary>
           </li>
           <li >
             <UiButtonsPrimary @clicked="$router.push({path: '/signup'})">Sign Up</UiButtonsPrimary>
@@ -33,13 +33,11 @@
 </template>
 
 <script>
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   data() {
     return {
       menu_revealed: false,
-      color: false,
+      text_color: false,
     }
   },
 
@@ -52,9 +50,9 @@ export default {
   created(){
     if (process.browser){
       if (window.innerWidth <= 640) {
-        this.color = false
+        this.text_color = false
       } else {
-        this.color = true
+        this.text_color = true
       }
     };
   }

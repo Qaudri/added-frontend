@@ -1,7 +1,6 @@
 <template>
   <div data-scroll-container>
-    <div data-scroll>
-      <header class="bg-accent md:h-screen relative h-[30rem]">
+      <header data-scroll-speed="1" data-scroll-section	 class="bg-accent md:h-screen relative h-[30rem]">
         <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
           <div id="blob" class="mr-16 md:mr-10 absolute h-2/5 md:h-3/5"></div>
           <div id="blur"></div>
@@ -23,7 +22,7 @@
         </div>
       </header>
 
-      <section aria-labelledby="section-title" class="py-16 container mx-auto px-6">
+      <section data-scroll-section aria-labelledby="section-title" class="py-16 container mx-auto px-6">
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">    
 
           <UiTypographyH2 id="section-title" class="uppercase text-accent">Our Services</UiTypographyH2>
@@ -88,52 +87,61 @@
 
       </section>
 
-      <section class="pt-16 ">
+      <section data-scroll-section data-scroll-direction="horizontal" class="pt-16 ">
         <div class="grid grid-cols-4 gap-5 justify-center mb-5 container mx-auto px-6">
           <UiTypographyH2 id="section-title" class="uppercase text-accent">Our Services</UiTypographyH2>
           <UiTypographyP>We specialize in providing customized solutions to help our clients achieve their goals. Whether you're looking to improve your brand strategy, streamline your processes, or enhance your digital presence, we're here to help.
           </UiTypographyP>
         </div>
 
-        <div class="mt-10 overflow-hidden w-full container h-screen mx-auto flex items-center justify-center">
-          <div class="flex gap-5 our-works" ref="scroller">
-            <div class="box border bg-blue-500 h-[75vh] w-[100vw]" ref="work"></div>
-            <div class="box border bg-green-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box border bg-red-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box border bg-yellow-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box border bg-purple-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box border bg-accent h-[75vh] w-screen" ref="work"></div>
+        <div class="mt-10 overflow-x-hidden w-full h-screen mx-auto flex items-center justify-center wrapper">
+          <div class="flex gap-5 content whitespace-none" ref="scroller" data-scroll>
+            <div class="box bg-blue-500 h-[75vh] w-screen" ref="work"></div>
+            <div class="box bg-green-500 h-[75vh] w-screen" ref="work"></div>
+            <div class="box bg-red-500 h-[75vh] w-screen" ref="work"></div>
+            <div class="box bg-yellow-500 h-[75vh] w-screen" ref="work"></div>
+            <div class="box bg-purple-500 h-[75vh] w-screen" ref="work"></div>
+            <div class="box bg-accent h-[75vh] w-screen" ref="work"></div>
           </div>
         </div>
 
       </section>
 
       <section class="h-screen bg-secondary"></section>
-    </div>
   </div>
 </template>
 <script>
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
-if (typeof window !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-}
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   mounted() {
+    gsap.registerPlugin(ScrollTrigger);
 
-    this.ctx = gsap.context(() => {
-      ScrollTrigger.create({
-        trigger: '.our-works',
+    const section = this.$refs.section;
+    const container = this.$refs.container;
+    const content = this.$refs.content;
+    const duration = content.offsetWidth - container.offsetWidth;
+
+    gsap.to(content, {
+      x: -duration,
+      ease: "none",
+      scrollTrigger: {
+        trigger: section,
         pin: true,
-        start: 'center center',
-        end: '+=300',
+        pinSpacing: false,
+        start: "top top",
+        end: () => `+=${duration}`,
+        scrub: true,
         markers: true,
-      });
-    }, this.$refs.main);
+      },
+    });
   },
-  beforeDestroy() {
-    this.ctx.revert();
+
+  created() {
+    document.body.style.overflowY = "scroll";
+  },
+  destroyed() {
+    document.body.style.overflowY = "auto";
   },
 }
 </script>
