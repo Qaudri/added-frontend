@@ -2,7 +2,7 @@
   <div data-scroll-container>
       <header data-scroll-speed="1" data-scroll-section	 class="bg-accent md:h-screen relative h-[30rem]">
         <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
-          <div id="blob" class="mr-16 md:mr-10 absolute h-2/5 md:h-3/5"></div>
+          <div id="blob" class="mr-16 md:mr-10 absolute h-2/5 md:h-3/5 2xl:h-4/5 2xl:backdrop-blur-[20vmax]"></div>
           <div id="blur"></div>
         </div>
 
@@ -22,7 +22,7 @@
         </div>
       </header>
 
-      <section data-scroll-section aria-labelledby="section-title" class="py-16 container mx-auto px-6">
+      <section  aria-labelledby="section-title" class="py-16 container mx-auto px-6">
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-5">    
 
           <UiTypographyH2 id="section-title" class="uppercase text-accent">Our Services</UiTypographyH2>
@@ -87,21 +87,16 @@
 
       </section>
 
-      <section data-scroll-section data-scroll-direction="horizontal" class="pt-16 ">
+      <section class="pt-16 ">
         <div class="grid grid-cols-4 gap-5 justify-center mb-5 container mx-auto px-6">
           <UiTypographyH2 id="section-title" class="uppercase text-accent">Our Services</UiTypographyH2>
           <UiTypographyP>We specialize in providing customized solutions to help our clients achieve their goals. Whether you're looking to improve your brand strategy, streamline your processes, or enhance your digital presence, we're here to help.
           </UiTypographyP>
         </div>
 
-        <div class="mt-10 overflow-x-hidden w-full h-screen mx-auto flex items-center justify-center wrapper">
-          <div class="flex gap-5 content whitespace-none" ref="scroller" data-scroll>
-            <div class="box bg-blue-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box bg-green-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box bg-red-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box bg-yellow-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box bg-purple-500 h-[75vh] w-screen" ref="work"></div>
-            <div class="box bg-accent h-[75vh] w-screen" ref="work"></div>
+        <div class="mt-10 overflow-x-hidden w-full flex items-center h-screen z-50">
+          <div class="flex gap-20 horizontal-container w-[400%]">
+            <div class="bg-blue-500 h-[75vh] aspect-square horizontal-section relative" v-for="item in 5"></div>
           </div>
         </div>
 
@@ -115,34 +110,30 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default {
   mounted() {
+    // Register the ScrollTrigger plugin with GSAP
     gsap.registerPlugin(ScrollTrigger);
+    let horizontalContainer = this.$el.querySelector('.horizontal-container');
+    let horizontalSections = gsap.utils.toArray(".horizontal-section");
 
-    const section = this.$refs.section;
-    const container = this.$refs.container;
-    const content = this.$refs.content;
-    const duration = content.offsetWidth - container.offsetWidth;
-
-    gsap.to(content, {
-      x: -duration,
-      ease: "none",
-      scrollTrigger: {
-        trigger: section,
-        pin: true,
-        pinSpacing: false,
-        start: "top top",
-        end: () => `+=${duration}`,
-        scrub: true,
-        markers: true,
-      },
+    let totalWidth = 0;
+    horizontalSections.forEach(section => {
+      totalWidth += section.offsetWidth;
     });
-  },
+    horizontalContainer.style.width = `${totalWidth}px`;
 
-  created() {
-    document.body.style.overflowY = "scroll";
-  },
-  destroyed() {
-    document.body.style.overflowY = "auto";
-  },
+    gsap.to(horizontalSections, {
+      xPercent: -100 * (horizontalSections.length - 1),
+      x: -totalWidth + window.innerWidth,
+      scrollTrigger: {
+        trigger: horizontalContainer,
+        pin: true,
+        scrub: 1,
+        start: 'center center',
+        invalidateOnRefresh: true,
+        end: () => "+=" + horizontalContainer.offsetWidth,
+      }
+    });
+  }
 }
 </script>
 <style>
