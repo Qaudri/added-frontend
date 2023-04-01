@@ -102,7 +102,10 @@
 
     </section>
 
-    <!-- <section class="h-screen bg-secondary"></section> -->
+    <section class="h-screen bg-secondary"></section>
+    <section class="h-screen bg-primary"></section>
+    <section class="h-screen bg-secondary"></section>
+    <section class="h-screen bg-secondary"></section>
   </div>
 </template>
 <script>
@@ -120,19 +123,11 @@ export default {
       totalWidth += section.offsetWidth;
     });
 
-    horizontalSections.forEach((section, index) => {
-      gsap.set(section, {
-        x: `${index * 100}%`,
-        width: `${100 / horizontalSections.length}%`,
-        position: "absolute"
-      });
-    });
-
     horizontalContainer.style.width = `${totalWidth}px`;
 
     gsap.to(horizontalSections, {
-      // xPercent: -100 * (horizontalSections.length - 1),
-      x: () => `-${(totalWidth - window.innerWidth) * (this.scrollY / (this.scrollHeight - window.innerHeight))}`,
+      xPercent: -100 * (horizontalSections.length - 1),
+      // x: () => `-${(totalWidth - window.innerWidth) * (this.scrollY / (this.scrollHeight - window.innerHeight))}`,
 
       scrollTrigger: {
         trigger: horizontalContainer,
