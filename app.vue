@@ -28,14 +28,7 @@ body {
 }
 
 *::-webkit-scrollbar {
-  width:8px;
+  width:0px;
   cursor: pointer;
-}
-
-*::-webkit-scrollbar-thumb {
-  width:8px;
-  background-color: #058182;
-  cursor: pointer;
-  border-radius: 50px;
 }
 </style>
