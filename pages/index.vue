@@ -2,7 +2,7 @@
   <div>
     <header class="bg-accent md:h-screen relative h-[30rem]">
       <div class="h-full w-full relative flex items-center justify-end overflow-x-hidden">
-        <div id="blob" class="mr-16 md:mr-10 absolute h-2/5 md:h-3/5 2xl:h-4/5 2xl:backdrop-blur-[20vmax]"></div>
+        <div id="blob" class="mr-16 md:mr-10 absolute h-2/5 md:h-3/5 2xl:h-4/5"></div>
         <div id="blur"></div>
       </div>
 
@@ -109,7 +109,6 @@
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   background: linear-gradient(to right, #058182, white);
   animation: rotate 5s infinite linear;
-  opacity: 0.8;
   position: absolute;
 }
 
