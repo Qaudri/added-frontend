@@ -101,46 +101,8 @@
       </div>
 
     </section>
-
-    <section class="h-screen bg-secondary"></section>
-    <section class="h-screen bg-primary"></section>
-    <section class="h-screen bg-secondary"></section>
-    <section class="h-screen bg-secondary"></section>
   </div>
 </template>
-<script>
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-export default {
-  mounted() {
-    gsap.registerPlugin(ScrollTrigger);
-    let horizontalContainer = this.$el.querySelector('.horizontal-container');
-    let horizontalSections = gsap.utils.toArray(".horizontal-section");
-
-    let totalWidth = 0;
-    horizontalSections.forEach(section => {
-      totalWidth += section.offsetWidth;
-    });
-
-    horizontalContainer.style.width = `${totalWidth}px`;
-
-    gsap.to(horizontalSections, {
-      xPercent: -100 * (horizontalSections.length - 1),
-      // x: () => `-${(totalWidth - window.innerWidth) * (this.scrollY / (this.scrollHeight - window.innerHeight))}`,
-
-      scrollTrigger: {
-        trigger: horizontalContainer,
-        pin: true,
-        scrub: true,
-        start: 'center center',
-        invalidateOnRefresh: true,
-        end: () => "+=" + horizontalContainer.offsetWidth,
-      }
-    });
-  }
-}
-</script>
 <style>
 #blob {
   aspect-ratio: 1;
