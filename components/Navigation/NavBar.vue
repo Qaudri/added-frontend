@@ -1,5 +1,5 @@
 <template>
-  <nav :class="menu_revealed ? 'bg-white duration-300 ease-in-out' : 'bg-transparent'" class="w-full z-100 absolute">
+  <nav :class="menu_revealed ? 'bg-white duration-300 ease-in-out' : 'bg-transparent'" class="w-full">
     <div class="flex container mx-auto items-center justify-between px-6 py-4 w-full">
       <div class="w-36">
         <NavigationLogo @logoClicked="reloadPage()"></NavigationLogo>
@@ -10,19 +10,19 @@
       <nav :class="menu_revealed ? 'translate-x-0' : '-translate-x-full'" class="md:h-fit z-100 md:static md:bg-transparent w-full md:w-fit fixed h-screen left-0 top-[65.5px] md:top duration-150 ease-in-out md:translate-x-0 bg-white">
         <ul class="grid grid-cols-1 place-items-center md:flex gap-5 md:gap-3 lg:gap-5 items-center px-6 pt-20 md:p-0">
           <li>
-            <UiButtonsTertiary :white_text="text_color" class="text-white">Projects</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color" class="text-white">About Us</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary :white_text="text_color">Marketplace</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color">Services</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary :white_text="text_color">Find Artisans</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color">Portfolio</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary :white_text="text_color" @clicked="$router.push({path: '/login'})">Sign In</UiButtonsTertiary>
+            <UiButtonsTertiary :white_text="text_color">Academy</UiButtonsTertiary>
           </li>
-          <li >
-            <UiButtonsPrimary @clicked="$router.push({path: '/signup'})">Sign Up</UiButtonsPrimary>
+          <li>
+            <UiButtonsPrimary @clicked="$router.push({path: '/signup'})">Contact Us</UiButtonsPrimary>
           </li>
         </ul>
       </nav>
