@@ -1,6 +1,6 @@
 <template>
   <header class="relative h-fit py-40 md:py-0 md:h-screen grid place-items-center">
-    <div class="max-w-7xl container mx-auto px-6">
+    <div class="max-w-7xl container mx-auto px-6 text-accent">
       <h1 class="uppercase font-bold text-8xl lg:text-9xl text-center bebas">Ignite  Your<br/>Imagination</h1>
       <UiTypographyH3 class="text-center m-0">Bespoke Creative Services</UiTypographyH3>
 
@@ -21,10 +21,12 @@
 
   <section class="bg-gray-100 py-20 px-6">
     <div class="max-w-7xl container mx-auto">
-      <UiTypographyH1 class="bebas">We Innovate Your Vision.</UiTypographyH1>
-      <UiTypographyP class="md:w-1/2">We help craft unique and tailored solutions that moves your business forward. Partnering with passionate leaders and visionary entrepreneurs, we apply creativity, strategy, design and data to re-invent businesses, drive growth and orchestrate customer centric transformation.</UiTypographyP>
+      <div class="block gap-5 md:flex">
+        <UiTypographyH1 class="bebas text-accent">We Innovate Your Vision.</UiTypographyH1>
+        <UiTypographyH3 class="md:w-1/2 text-accent">We help craft unique and tailored solutions that moves your business forward. Partnering with passionate leaders and visionary entrepreneurs, we apply creativity, strategy, design and data to re-invent businesses, drive growth and orchestrate customer centric transformation.</UiTypographyH3>
+      </div>
 
-      <div class="grid md:grid-cols-3 divide-black divide-y md:divide-y-0 md:divide-x mt-20">
+      <div class="grid md:grid-cols-3 divide-accent divide-y md:divide-y-0 md:divide-x mt-20 text-accent">
         <div class="w-full p-5">
           <div class="w-full lg:w-2/3 mx-auto">
             <UiTypographyH1 class="bebas inline-flex items-baseline">97
@@ -63,5 +65,15 @@
     </div>
   </section>
 
-  <section class="px-6 py-20 max-w-7xl mx-auto container"></section>
+  <section class="px-6 py-20 max-w-7xl mx-auto container text-accent">
+    <UiTypographyH1 class="bebas">Services</UiTypographyH1>
+    <div class="grid grid-cols-2 gap-5 lg:gap-16 mt-6">
+    <div class="bg-gray-100 w-full aspect-video"></div>
+    <div class="justify-end flex flex-col">
+      <UiTypographyH1 class="bebas">Branding</UiTypographyH1>
+      <UiTypographyH3 class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus officiis earum placeat consectetur fuga sed repellendus ea explicabo unde, quas odio. Pariatur facilis nobis distinctio harum explicabo laborum sapiente fugit?</UiTypographyH3>
+      <UiButtonsSecondary class="flex">Learn More <span class="inline"><IconsNext class="w-5"/></span></UiButtonsSecondary>
+    </div>
+    </div>
+  </section>
 </template>
