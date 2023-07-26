@@ -16,16 +16,16 @@
         </UiButtonsTertiary>
       </div>
     </div>
-    <img src="@/assets/images/gradient.png" class="w-80 absolute right-0 -bottom-[15%]" alt="">
+    <img src="@/assets/images/gradient.png" class="w-72 absolute right-0 -bottom-[15%]" alt="">
   </header>
   <section class="bg-gray-100 py-20 px-6">
     <div class="max-w-7xl mx-auto">
       <UiTypographyH1 class="bebas">We Innovate Your Vision.</UiTypographyH1>
       <UiTypographyP class="md:w-1/2">We help craft unique and tailored solutions that moves your business forward. Partnering with passionate leaders and visionary entrepreneurs, we apply creativity, strategy, design and data to re-invent businesses, drive growth and orchestrate customer centric transformation.</UiTypographyP>
 
-      <div class="grid grid-cols-3 divide-black gap-10 divide-x mt-20">
-        <div class="w-full py-8">
-          <div class="w-2/3 mx-auto">
+      <div class="grid md:grid-cols-3 divide-black divide-y md:divide-y-0 md:divide-x mt-20">
+        <div class="w-full p-5">
+          <div class="w-full lg:w-2/3 mx-auto">
             <UiTypographyH1 class="bebas inline-flex items-baseline">97
             <span>
               <UiTypographyH2 class="bebas">&nbsp;%</UiTypographyH2>
@@ -36,8 +36,8 @@
 
         </div>
 
-        <div class="w-full py-8">
-          <div class="w-2/3 mx-auto">
+        <div class="w-full p-5">
+          <div class="w-full lg:w-2/3 mx-auto">
             <UiTypographyH1 class="bebas inline-flex items-baseline">5
             <span>
               <UiTypographyH2 class="bebas">&nbsp;M</UiTypographyH2>
@@ -48,8 +48,8 @@
 
         </div>
 
-        <div class="py-8 w-full">
-          <div class="w-2/3 mx-auto">
+        <div class="w-full p-5">
+          <div class="w-full lg:w-2/3 mx-auto">
             <UiTypographyH1 class="bebas inline-flex items-baseline">4.67
             <span>
               <UiTypographyH2 class="bebas">&nbsp;M</UiTypographyH2>
