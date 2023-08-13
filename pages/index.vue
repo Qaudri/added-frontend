@@ -22,9 +22,9 @@
     <img src="@/assets/images/gradient.png" class="w-72 absolute right-0 -bottom-[15%]" alt="">
   </header>
 
-  <section class="bg-gray-100 h-screen py-20 px-6">
+  <section class="bg-gray-100 py-20 px-6">
     <div class="max-w-7xl container mx-auto">
-      <div class="bg-white rounded-lg border border-accent p-5 relative -top-28 lg:w-3/4 mx-auto shadow-2xl">
+      <div class="bg-white rounded-2xl border border-accent p-5 relative -top-28 lg:w-3/4 mx-auto shadow-2xl">
         <UiTypographyH3 class="text-center">Our Clients</UiTypographyH3>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
           <NavigationLogo class="w-3/4 mx-auto" />
@@ -33,10 +33,39 @@
           <NavigationLogo class="w-3/4 mx-auto" />
         </div>
       </div>
+
+      <UiTypographyH2 class="text-center">Core Services</UiTypographyH2>
+      <ul class="mt-8 grid gap-8">
+        <CardsServices v-for="service in services" :key="service.id" :imagePath="service.imagePath" :title="service.title" :description="service.description" />
+      </ul>
     </div>
   </section>
 </template>
 <script>
 export default {
+  data() {
+    return {
+      services: [
+        {
+          id: 1,
+          title: 'Branding',
+          description: 'We create unique brands for our clients and build the most popular websites of the moment with an outstanding design team.',
+          imagePath: '',
+        },
+        {
+          id: 2,
+          title: 'Web Development',
+          description: 'We create unique websites for our clients and build the most popular websites of the moment with an outstanding design team.',
+          imagePath: '',
+        },
+        {
+          id: 3,
+          title: 'Digital Marketing',
+          description: 'Together, we are a team of imaginative, inquisitive people with a shared passion, united by our desire to craft impactful and engaging marketing strategies and campaigns for ambitious brands.',
+          imagePath: '',
+        },
+      ]
+    }
+  },
 }
 </script>
