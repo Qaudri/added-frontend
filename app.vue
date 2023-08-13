@@ -6,7 +6,7 @@
   </div>
 </template>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@500;600;700;800&display=swap');
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
