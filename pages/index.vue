@@ -35,7 +35,7 @@
       </div>
 
       <UiTypographyH2 class="text-center">Core Services</UiTypographyH2>
-      <ul class="mt-8 grid gap-8">
+      <ul class="mt-8 grid md:grid-cols-2 gap-8">
         <CardsServices v-for="service in services" :key="service.id" :imagePath="service.imagePath" :title="service.title" :description="service.description" />
       </ul>
     </div>
@@ -51,20 +51,26 @@ export default {
       services: [
         {
           id: 1,
-          title: 'Branding',
-          description: 'We create unique brands for our clients and build the most popular websites of the moment with an outstanding design team.',
+          title: 'Consultancy',
+          description: `Whatever you need with your next step, you can discuss with us and we'll help you bring it to life in the easiest, most effective way possible. Get in touch and experience it firsthand.`,
           imagePath: design,
         },
         {
           id: 2,
-          title: 'Web Development',
-          description: 'We create unique websites for our clients and build the most popular websites of the moment with an outstanding design team.',
-          imagePath: web,
+          title: 'Branding',
+          description: 'You can get an appealing and creative identity design for your next project, we are committed to delivering high-quality design services that help our clients achieve their business goals.',
+          imagePath: design,
         },
         {
           id: 3,
+          title: 'Web Development',
+          description: 'We offer top-notch web development services to help your business succeed online. Whether you need a simple brochure website or a complex e-commerce platform, or a data-driven portal development we can help.',
+          imagePath: web,
+        },
+        {
+          id: 4,
           title: 'Digital Marketing',
-          description: 'Together, we are a team of imaginative, inquisitive people with a shared passion, united by our desire to craft impactful and engaging marketing strategies and campaigns for ambitious brands.',
+          description: 'With our team of creatives and experst, you can rest easy knowing that your message is seen by audiences across the world, and your marketing is running at optimum efficiency. Contact us today to learn more.',
           imagePath: social,
         },
       ]

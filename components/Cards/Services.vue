@@ -1,6 +1,6 @@
 <template>
-  <li class="flex flex-col md:flex-row gap-8 p-8">
-    <img :src="imagePath" alt="">
+  <li class="flex flex-col md:flex-row gap-4 md:gap-8 p-8 border border-gray-400 rounded-xl">
+    <img :src="imagePath" alt="" class="w-14 h-14">
     <div>
       <UiTypographyH3>
       {{ title }}
