@@ -42,6 +42,9 @@
   </section>
 </template>
 <script>
+import design from '@/assets/images/services/design.svg'
+import web from '@/assets/images/services/web.svg'
+import social from '@/assets/images/services/social.svg'
 export default {
   data() {
     return {
@@ -50,19 +53,19 @@ export default {
           id: 1,
           title: 'Branding',
           description: 'We create unique brands for our clients and build the most popular websites of the moment with an outstanding design team.',
-          imagePath: '',
+          imagePath: design,
         },
         {
           id: 2,
           title: 'Web Development',
           description: 'We create unique websites for our clients and build the most popular websites of the moment with an outstanding design team.',
-          imagePath: '',
+          imagePath: web,
         },
         {
           id: 3,
           title: 'Digital Marketing',
           description: 'Together, we are a team of imaginative, inquisitive people with a shared passion, united by our desire to craft impactful and engaging marketing strategies and campaigns for ambitious brands.',
-          imagePath: '',
+          imagePath: social,
         },
       ]
     }
