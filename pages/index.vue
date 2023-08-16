@@ -19,10 +19,10 @@
         </UiButtonsTertiary>
       </div>
     </div>
-    <img src="@/assets/images/gradient.png" class="w-72 absolute right-0 -bottom-[15%]" alt="">
+    <img src="@/assets/images/gradient.png" class="w-48 md:w-72 absolute right-0 -bottom-[15%]" alt="">
   </header>
 
-  <section class="bg-gray-100 py-20 px-6">
+  <section class="bg-primary bg-opacity-5 py-20 px-6">
     <div class="max-w-7xl container mx-auto">
       <div class="bg-white rounded-2xl border border-accent p-5 relative -top-28 lg:w-3/4 mx-auto shadow-2xl">
         <UiTypographyH3 class="text-center">Our Clients</UiTypographyH3>
@@ -39,6 +39,11 @@
         <CardsServices v-for="service in services" :key="service.id" :imagePath="service.imagePath" :title="service.title" :description="service.description" />
       </ul>
     </div>
+  </section>
+
+  <section class="py-20 px-6 max-w-7xl container mx-auto">
+    <UiTypographyH2>Featured Projects</UiTypographyH2>
+    <UiTypographyP>Enjoy some of our best work with previous clients</UiTypographyP>
   </section>
 </template>
 <script>
