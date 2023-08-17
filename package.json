@@ -13,11 +13,7 @@
     "tailwindcss": "^3.2.7"
   },
   "dependencies": {
-    "@splinetool/loader": "^0.9.269",
-    "gsap": "^3.11.5",
-    "locomotive-scroll": "^4.1.4",
     "nuxt-swiper": "^1.2.0",
-    "tailwindcss": "^3.2.7",
-    "three": "^0.150.1"
+    "tailwindcss": "^3.2.7"
   }
 }
