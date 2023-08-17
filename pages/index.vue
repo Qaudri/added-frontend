@@ -44,6 +44,12 @@
   <section class="py-20 px-6 max-w-7xl container mx-auto">
     <UiTypographyH2>Featured Projects</UiTypographyH2>
     <UiTypographyP>Enjoy some of our best work with previous clients</UiTypographyP>
+
+    <Swiper :loop="true" class="">
+      <SwiperSlide  v-for="item in 10" :key="item.id">
+        <CardsProject />
+    </SwiperSlide>
+    </Swiper>
   </section>
 </template>
 <script>
