@@ -45,14 +45,11 @@
     <UiTypographyH2>Featured Projects</UiTypographyH2>
     <UiTypographyP>Enjoy some of our best work with previous clients</UiTypographyP>
 
-    <Swiper :loop="true" class="">
-      <SwiperSlide  v-for="item in 10" :key="item.id">
-        <CardsProject />
-    </SwiperSlide>
-    </Swiper>
+    <CardsServices class="mt-8"></CardsServices>
   </section>
 </template>
 <script>
+import Glide from '@glidejs/glide'
 import design from '@/assets/images/services/design.svg'
 import web from '@/assets/images/services/web.svg'
 import social from '@/assets/images/services/social.svg'
@@ -87,5 +84,18 @@ export default {
       ]
     }
   },
+
+  mounted(){
+    new Glide('.glide__slides', {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      autoplay: true,
+      animationDuration: 2000,
+    }).mount()
+  },
 }
+
+
+
 </script>
