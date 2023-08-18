@@ -2,9 +2,13 @@
   <div class="glide_slides">
     <div class="glide__track" data-glide-el="track">
       <ul class="glide__slides">
-        <li v-for="item in 10" :key="item.id" class="glide__slide">
-          <div class="h-screen-50 w-full min-w-full bg-gradient-to-b rounded-lg from-primary to-black">
-            <UiTypographyH3 class="text-white">AbikeAlagbo</UiTypographyH3>
+        <li v-for="item in 10" :key="item.id" class="glide__slide w-full h-full">
+          <div class="h-screen-75 w-full bg-gradient-to-b rounded-3xl from-white to-black p-8 flex items-end">
+            <div>
+              <UiTypographyH3 class="text-white">AbikeAlagbo</UiTypographyH3>
+              <UiTypographyP class="text-white">Full brand identity design for AbikeAlagbo</UiTypographyP>
+              <UiButtonsPrimary class="mt-8">Learn More</UiButtonsPrimary>
+            </div>
           </div>
         </li>
       </ul>
@@ -20,18 +24,21 @@ onMounted(() =>{
   sliders.forEach((slider) => {
     new Glide(slider, {
       type: 'carousel',
-      focusAt: 'center',
+      focusAt: 0,
       autoplay: true,
       animationDuration: 2000,
       gap: 10,
-      perView: 3,
+      peek: 20,
       breakpoints: {
-        200: {
+        768: {
           perView: 1
         },
-        1024: {
+        1366: {
           perView: 2
         },
+        1536: {
+          perView: 3
+        }
       }
     }).mount()
   })
