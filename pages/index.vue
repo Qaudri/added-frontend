@@ -45,11 +45,10 @@
     <UiTypographyH2>Featured Projects</UiTypographyH2>
     <UiTypographyP>Enjoy some of our best work with previous clients</UiTypographyP>
 
-    <CardsServices class="mt-8"></CardsServices>
+    <CardsProject class="mt-8"></CardsProject>
   </section>
 </template>
 <script>
-import Glide from '@glidejs/glide'
 import design from '@/assets/images/services/design.svg'
 import web from '@/assets/images/services/web.svg'
 import social from '@/assets/images/services/social.svg'
@@ -83,16 +82,6 @@ export default {
         },
       ]
     }
-  },
-
-  mounted(){
-    new Glide('.glide__slides', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 3,
-      autoplay: true,
-      animationDuration: 2000,
-    }).mount()
   },
 }
 
