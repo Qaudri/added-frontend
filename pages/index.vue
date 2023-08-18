@@ -4,7 +4,7 @@
   </Head>
   <header class="relative h-fit py-40 md:py-0 md:h-screen grid place-items-center">
     <div class="max-w-7xl container mx-auto px-6 text-accent">
-      <h1 class="capitalize font-bold text-6xl lg:text-8xl text-center">Ignite Your<br/>Imagination</h1>
+      <h1 class="capitalize font-bold sm:text-5xl text-6xl lg:text-8xl text-center">Ignite Your<br/>Imagination</h1>
       <UiTypographyH3 class="text-center mt-4 font-medium text-accent">Bespoke Creative Services</UiTypographyH3>
 
       <div class="flex gap-5 mt-8 justify-center items-center">
@@ -46,6 +46,31 @@
     <UiTypographyP>Enjoy some of our best work with previous clients</UiTypographyP>
 
     <CardsProject class="mt-8"></CardsProject>
+  </section>
+
+  <section class="rounded-t-full bg-accent min-h-screen">
+    <div class="max-w-7xl mx-auto container py-20 px-6 text-white text-center">
+      <UiTypographyP class="">Contact Us</UiTypographyP>
+      <h1 class="text-6xl lg:text-8xl font-bold">Let's make <br /> your dream <br /> come through!</h1>
+      <UiTypographyP class="mt-5">We are very excited to work with you. Drop us your message today!</UiTypographyP>
+
+      <form action="" class="mt-16 w-[80vw] lg:w-[50vw] mx-auto">
+        <div class="grid lg:grid-cols-2  gap-8">
+          <FormInput label="Name"/>
+          <FormInput label="Company Name"/>
+          <FormInput label="Email"/>
+          <FormInput label="Mobile"/>
+        </div>
+        <div class="my-8">
+          <label for="" class="block text-left text-sm mb-1">Message</label>
+          <textarea rows="10" class="w-full py-3 px-4 border text-sm outline-none border-accent ring-0 focus:outline-none focus:border-primary active:border-primary rounded-md active:text-primary focus:text-primary text-accent bg-white bg-opacity-10 border-opacity-20 active:border-opacity-100 focus:border-opacity-100 duration-300 ease-out"></textarea>
+        </div>
+
+        <div class="w-36 mx-auto mt-8">
+          <FormButton>Submit</FormButton>
+        </div>
+      </form>
+    </div>
   </section>
 </template>
 <script>
