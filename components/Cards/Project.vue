@@ -5,7 +5,7 @@
         <li v-for="item in 10" :key="item.id" class="glide__slide w-full h-full">
           <div class="h-screen-75 w-full bg-gradient-to-b rounded-3xl from-white to-black p-8 flex items-end">
             <div>
-              <UiTypographyH3 class="text-white">AbikeAlagbo</UiTypographyH3>
+              <UiTypographyH2 class="text-white">AbikeAlagbo</UiTypographyH2>
               <UiTypographyP class="text-white">Full brand identity design for AbikeAlagbo</UiTypographyP>
               <UiButtonsPrimary class="mt-8">Learn More</UiButtonsPrimary>
             </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="emitclicked" class="font-normal text-sm xl:text-base 2xl:text-lg hover:text-primary ease-in-out duration-300 border-b border-transparent hover:border-primary select-none text-left outline-none focus:outline-none focus:border-primary" :class="white_text ? 'text-white' : 'text-accent'">
+    <button @click="emitclicked" class="font-semibold text-sm xl:text-base 2xl:text-lg hover:text-primary ease-in-out duration-300  hover:border-primary select-none text-left outline-none" :class="white_text ? 'text-white' : 'text-accent'">
       <slot />
     </button>
   </div>

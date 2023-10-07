@@ -8,24 +8,21 @@
       <UiButtonsMenu @revealMenu="toggleMenu()" />
 
       <nav :class="menu_revealed ? 'translate-x-0' : '-translate-x-full'" class="md:h-fit z-100 md:static md:bg-transparent w-full md:w-fit fixed h-screen left-0 top-[65.5px] md:top duration-150 ease-in-out md:translate-x-0 bg-white">
-        <ul class="grid grid-cols-1 place-items-center md:flex gap-5 md:gap-3 lg:gap-5 items-center px-6 pt-20 md:p-0">
+        <ul class="grid grid-cols-1 place-items-center md:flex gap-8 md:gap-3 lg:gap-5 items-center px-6 pt-20 md:p-0">
           <li>
-            <UiButtonsTertiary>About Us</UiButtonsTertiary>
+            <UiButtonsTertiary>home</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary>Services</UiButtonsTertiary>
+            <UiButtonsTertiary>discipline +</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary>Portfolio</UiButtonsTertiary>
+            <UiButtonsTertiary>academy</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary>Blog</UiButtonsTertiary>
+            <UiButtonsTertiary>about us</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary>Academy</UiButtonsTertiary>
-          </li>
-          <li>
-            <UiButtonsPrimary @clicked="$router.push({path: '/signup'})">Contact Us</UiButtonsPrimary>
+            <UiButtonsTalk class="text-primary hover:text-secondary duration-300 ease-in-out w-28 cursor-pointer" />
           </li>
         </ul>
       </nav>

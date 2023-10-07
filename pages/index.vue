@@ -1,115 +1,160 @@
+<script setup>
+import Glide from '@glidejs/glide'
+import { onMounted } from 'vue';
+
+onMounted(() =>{
+  const projects = document.querySelectorAll(`.reviews`)
+  projects.forEach((slider) => {
+    new Glide(slider, {
+      type: 'carousel',
+      focusAt: 'center',
+      autoplay: true,
+      animationDuration: 2000,
+      breakpoints: {
+        768: {
+          perView: 1
+        },
+        1024: {
+          perView: 2
+        },
+        1280: {
+          perView: 3
+        },
+        1536: {
+          perView: 4
+        }
+      }
+      }).mount()
+  })
+})
+</script>
 <template>
   <Head>
     <Title>Home | Added Digital Solutions</Title>
   </Head>
   <header class="relative h-fit py-40 md:py-0 md:h-screen grid place-items-center">
     <div class="max-w-7xl container mx-auto px-6 text-accent">
-      <h1 class="capitalize font-bold sm:text-5xl text-6xl lg:text-8xl text-center">Ignite Your<br/>Imagination</h1>
-      <UiTypographyH3 class="text-center mt-4 font-medium text-accent">Bespoke Creative Services</UiTypographyH3>
-
-      <div class="flex gap-5 mt-8 justify-center items-center">
-        <UiButtonsPrimary>Discover what we do</UiButtonsPrimary>
-        <UiButtonsTertiary>
-          <div class="flex gap-2 items-center">
-            <span>Scroll Down</span>
-            <div class="animate-bounce">
-              <IconsNext class="w-5 rotate-90 block"></IconsNext>
-            </div>
-          </div>
-        </UiButtonsTertiary>
-      </div>
+      <UiTypographyH1 class="capitalize font-bold sm:text-5xl text-6xl lg:text-8xl text-center">Ignite Your<br/>Imagination</UiTypographyH1>
     </div>
-    <img src="@/assets/images/gradient.png" class="w-48 md:w-72 absolute right-0 -bottom-[15%]" alt="">
   </header>
 
-  <section class="bg-primary bg-opacity-5 py-20 px-6">
-    <div class="max-w-7xl container mx-auto">
-      <div class="bg-white rounded-2xl border border-accent p-5 relative -top-28 lg:w-3/4 mx-auto shadow-2xl">
-        <UiTypographyH3 class="text-center">Our Clients</UiTypographyH3>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mt-8">
-          <NavigationLogo class="w-3/4 mx-auto" />
-          <NavigationLogo class="w-3/4 mx-auto" />
-          <NavigationLogo class="w-3/4 mx-auto" />
-          <NavigationLogo class="w-3/4 mx-auto" />
+  <section class="max-w-7xl py-20 container mx-auto px-6 text-accent">
+    <UiTypographyH2>we are ads<span class="text-primary">.</span></UiTypographyH2>
+    <UiTypographyP class="mt-6">We're a small collective of Award Winning Branding and Digital Marketing specialists with a passion for breathing new life into new and existing brands. Our team considers ourselves to be digital storytellers but the stories we're telling don't belong to us! <br /> <br />ADS gets to know your business inside and out, meeting your team, learning your history and goals and examining your needs to create memorable, stand-out branding that tells the story of your brand.<br /> <br />We're a full-service agency that specialises in branding, print, packaging, web design and digital advertising. Take the first steps and talk to a member of our team today!</UiTypographyP>
+    
+    <NuxtLink>
+      <UiButtonsTalk class="text-primary hover:text-secondary duration-300 ease-in-out w-36 cursor-pointer mt-8" />
+    </NuxtLink>
+  </section>
+
+  <section>
+    <div class="bg-light text-accent">
+      <div class="pt-20 pb-6 px-6 max-w-7xl container mx-auto block lg:flex gap-8">
+        <UiTypographyH2 class="block min-w-fit">what we do<span class="text-primary">.</span></UiTypographyH2>
+        <div>
+          <UiTypographyP>We're an agency that won't bull***t you, let alone try to sell you something. We only recommend things that are in the interest of our clients, and we're here for long-term relationships, not quick wins. We have a “whatever it takes” attitude instilled in us to make sure that projects are serviced way above the required means, delivered on time and within the required deadline every time.<br /><br />The “designer” taking your brief will be responsible for working on the project so they receive the brief first hand (avoiding any loss in important communication), thus understanding the project far better than an account handler passing on the information third hand.<br /><br />At ADS we are proud to have built such a highly skilled and multi-disciplined team. Check out our disciplines overview below!</UiTypographyP>
+
+          <div class="grid md:grid-cols-2 gap-8 mt-12">
+            <div v-for="service in services" :key="service.id" class="services">
+              <UiTypographyH2>{{ service.title }}</UiTypographyH2>
+              <UiTypographyP class="mt-6">{{ service.description }}</UiTypographyP>
+            </div>
+          </div>
         </div>
+
       </div>
-
-      <UiTypographyH2 class="text-center">Core Services</UiTypographyH2>
-      <ul class="mt-8 grid md:grid-cols-2 gap-8">
-        <CardsServices v-for="service in services" :key="service.id" :imagePath="service.imagePath" :title="service.title" :description="service.description" />
-      </ul>
     </div>
+    <img src="@/assets/images/triangle.svg" class="w-full abolute bottom-0" />
   </section>
 
-  <section class="py-20 px-6 max-w-7xl container mx-auto">
-    <UiTypographyH2>Featured Projects</UiTypographyH2>
-    <UiTypographyP>Enjoy some of our best work with previous clients</UiTypographyP>
-
-    <CardsProject class="mt-8"></CardsProject>
-  </section>
-
-  <section class="rounded-t-full bg-accent min-h-screen">
-    <div class="max-w-7xl mx-auto container py-20 px-6 text-white text-center">
-      <UiTypographyP class="">Contact Us</UiTypographyP>
-      <h1 class="text-6xl lg:text-8xl font-bold">Let's make <br /> your dream <br /> come through!</h1>
-      <UiTypographyP class="mt-5">We are very excited to work with you. Drop us your message today!</UiTypographyP>
-
-      <form action="" class="mt-16 w-[80vw] lg:w-[50vw] mx-auto">
-        <div class="grid lg:grid-cols-2  gap-8">
-          <FormInput label="Name"/>
-          <FormInput label="Company Name"/>
-          <FormInput label="Email"/>
-          <FormInput label="Mobile"/>
-        </div>
-        <div class="my-8">
-          <label for="" class="block text-left text-sm mb-1">Message</label>
-          <textarea rows="10" class="w-full py-3 px-4 border text-sm outline-none border-accent ring-0 focus:outline-none focus:border-primary active:border-primary rounded-md active:text-primary focus:text-primary text-accent bg-white bg-opacity-10 border-opacity-20 active:border-opacity-100 focus:border-opacity-100 duration-300 ease-out"></textarea>
-        </div>
-
-        <div class="w-36 mx-auto mt-8">
-          <FormButton>Submit</FormButton>
-        </div>
-      </form>
+  <section class="px-6 py-20 max-w-7xl container mx-auto text-accent">
+    <UiTypographyH2>check out some of our work<span class="text-primary">.</span></UiTypographyH2>
+    <UiTypographyP class="mt-2">Interested in our work? Check out some of the brand stories we've helped to create. </UiTypographyP>
+    <div class="projects mt-8">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="gap-8 glide__slides">
+          <li v-for="project in projects" :key="project.id" class="glide__slide">
+            <div :style="{ background:`url(${project.imagePath})`}" class="background w-full aspect-square bg-accent"></div>
+          </li>
+        </ul>
+      </div>
     </div>
+
   </section>
+
+  <CardsReviews />
 </template>
 <script>
-import design from '@/assets/images/services/design.svg'
-import web from '@/assets/images/services/web.svg'
-import social from '@/assets/images/services/social.svg'
+
+import image1 from '@/assets/images/service.jpg';
+import image2 from '@/assets/images/creativity.jpg';
+import image3 from '@/assets/images/art.webp';
 export default {
   data() {
     return {
       services: [
         {
           id: 1,
-          title: 'Consultancy',
-          description: `Whatever you need with your next step, you can discuss with us and we'll help you bring it to life in the easiest, most effective way possible. Get in touch and experience it firsthand.`,
-          imagePath: design,
+          title: 'branding & positioning',
+          description: `We've worked with businesses on an International level to create memorable product branding, logos, printed materials and more.`,
         },
         {
           id: 2,
-          title: 'Branding',
-          description: 'You can get an appealing and creative identity design for your next project, we are committed to delivering high-quality design services that help our clients achieve their business goals.',
-          imagePath: design,
+          title: 'digital & online',
+          description: `Our branding doesn't stop at the supermarket shelves, we design and build fully responsive, mobile-friendly websites that allow you to truly showcase your brand!`,
         },
         {
           id: 3,
-          title: 'Web Development',
-          description: 'We offer top-notch web development services to help your business succeed online. Whether you need a simple brochure website or a complex e-commerce platform, or a data-driven portal development we can help.',
-          imagePath: web,
+          title: 'packaging & instore',
+          description: 'Packaging and in-store advertising is the first thing your customers will see when searching for new products. Make your brand memorable with our expert product designs.',
         },
         {
           id: 4,
-          title: 'Digital Marketing',
-          description: 'With our team of creatives and experst, you can rest easy knowing that your message is seen by audiences across the world, and your marketing is running at optimum efficiency. Contact us today to learn more.',
-          imagePath: social,
+          title: 'marketing & advertising',
+          description: 'Quality marketing and advertising creates engagement for your brand. Sourcefour specialise in Digital Marketing, Search Engine Optimisation (SEO) and Pay Per Click advertising',
         },
-      ]
+      ],
+
+      projects: [
+        {
+          id: 1,
+          imagePath: image1
+        },
+        {
+          id: 2,
+          imagePath: image2
+        },
+        {
+          id: 3,
+          imagePath: image3
+        },
+        {
+          id: 4,
+          imagePath: image1
+        },
+        {
+          id: 5,
+          imagePath: image2
+        },
+        {
+          id: 6,
+          imagePath: image3
+        },
+      ],
     }
   },
 }
-
-
-
 </script>
+<style>
+.services:first-child>h2{
+  color: #058182;
+}
+.services:last-child>h2{
+  color: #058182;
+}
+.background {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+</style>

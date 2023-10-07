@@ -1,5 +1,5 @@
 <template>
-  <p class="text-sm xl:text-base">
+  <p class="text-base">
     <slot/>
   </p>
 </template>

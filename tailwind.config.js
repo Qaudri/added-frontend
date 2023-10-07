@@ -6,10 +6,8 @@ module.exports = {
       colors: {
         'primary': '#058182',
         'secondary': '#F26522',
-        'accent': '#222222',
-        'gray': {
-          '50': '#f8f8f8'
-        }
+        'accent': '#666666',
+        'light': '#F4F4F4'
       },
 
       height: theme => ({
