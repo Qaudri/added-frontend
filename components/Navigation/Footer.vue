@@ -4,7 +4,7 @@
       <div class="" >
         <div class="flex gap-4 items-center">
         <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
-          <img src="@/assets/images/instagram.svg" class="w-6 h-6" alt="">
+          <img src="@/assets/images/insta.svg" class="w-6 h-6" alt="">
         </NuxtLink>
         <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
           <img src="@/assets/images/facebook.svg" class="w-6 h-6" alt="">
@@ -21,8 +21,8 @@
       <div class="grid gap-2 text-left lg:text-right mt-8">
       <h2 class="text-primary text-2xl font-bold">Added Digital Solutions</h2>
       <UiTypographyP class="text-accent capitalize">1st floor, ID Global building, beside Allan pharmacy,<br/>opp Iwo city hall, Iwo, Osun state, nigeria</UiTypographyP>
-      <UiTypographyH2 class="text-primary text-2xl font-bold">+2348066600820</UiTypographyH2>
-      <UiTypographyH2 class="text-primary text-2xl font-bold">contact@addeddigital.com</UiTypographyH2>
+      <h2 class="text-primary text-2xl font-bold">+2348066600820</h2>
+      <h2 class="text-primary text-2xl font-bold">contact@addeddigital.com</h2>
       </div>
     </div>
   </footer>

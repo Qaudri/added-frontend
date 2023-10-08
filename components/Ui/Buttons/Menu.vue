@@ -24,7 +24,7 @@ export default {
       console.log('click function working')
       this.mobile_nav = !this.mobile_nav
       console.log('menu toggled')
-      this.$emit("revealMenu")
+      this.$emit("toggleMenu")
       console.log('menu emitted')
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-8xl">
+  <h1 class="text-6xl xl:text-8xl">
     We help businesses
     <span class="typed-text font-bold">{{typeValue}}</span>
     <span class="blinking-cursor">|</span>
@@ -13,7 +13,7 @@ export default {
       return {
         typeValue: "",
         typeStatus: false,
-        displayTextArray: ["reach their peaks...", "connect with customers.."],
+        displayTextArray: ["reach their peaks...", "connect with customers."],
         typingSpeed: 100,
         erasingSpeed: 100,
         newTextDelay: 2000,
@@ -32,7 +32,7 @@ export default {
           }
           else {
               this.typeStatus = false;
-              setTimeout(this.eraseText, this.newTextDelay);
+              // setTimeout(this.eraseText, this.newTextDelay);
           }
       },
       eraseText() {
@@ -78,7 +78,7 @@ span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: #058182;
   }
 }
 @-moz-keyframes blink {
@@ -87,7 +87,7 @@ span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: #058182;
   }
 }
 @-webkit-keyframes blink {
@@ -96,7 +96,7 @@ span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: #058182;
   }
 }
 @-ms-keyframes blink {
@@ -105,7 +105,7 @@ span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: #058182;
   }
 }
 @-o-keyframes blink {
@@ -114,7 +114,7 @@ span.typed-text {
     color: transparent;
   }
   50% {
-    color: #2c3e50;
+    color: #058182;
   }
 }
 </style>

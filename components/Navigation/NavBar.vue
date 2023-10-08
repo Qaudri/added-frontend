@@ -1,8 +1,8 @@
 <template>
   <nav :class="menu_revealed ? 'bg-white duration-300 ease-in-out' : 'bg-transparent'" class="w-full absolute">
-    <div class="flex container mx-auto items-center justify-between px-6 py-4 w-full">
+    <div class="flex container mx-auto items-center max-w-7xl justify-between px-6 py-4 w-full">
       <div class="w-36">
-        <NavigationLogo @logoClicked="console.log('logo clicked')"></NavigationLogo>
+        <NavigationLogo></NavigationLogo>
       </div>
 
       <UiButtonsMenu @revealMenu="toggleMenu()" />
@@ -20,6 +20,9 @@
           </li>
           <li>
             <UiButtonsTertiary>about us</UiButtonsTertiary>
+          </li>
+          <li>
+            <UiButtonsTertiary @clicked="test">blog</UiButtonsTertiary>
           </li>
           <li>
             <UiButtonsTalk class="text-primary hover:text-secondary duration-300 ease-in-out w-28 cursor-pointer" />
@@ -45,6 +48,10 @@ export default {
       console.log('menu button clicked')
       this.menu_revealed = !this.menu_revealed
     },
+
+    test(){
+      console.log('menu button')
+    }
   },
 
 }
