@@ -3,9 +3,10 @@
   <Head>
     <Title>Home | Added Digital Solutions</Title>
   </Head>
-  <header class="relative h-fit py-40 md:py-0 md:h-screen grid place-items-center">
-    <div class="max-w-7xl container mx-auto px-6 text-accent">
-      <UiTypographyH1 class="capitalize font-bold sm:text-5xl text-6xl lg:text-8xl text-center">Ignite Your<br/>Imagination</UiTypographyH1>
+  <header class="relative h-fit py-40 md:py-0 md:h-screen grid place-items-end">
+    <div class="max-w-7xl container mx-auto px-6 text-accent flex justify-between items-center">
+      <Typewriter />
+      <img src="@/assets/images/hero.svg" alt="" class="w-1/2">
     </div>
   </header>
 
