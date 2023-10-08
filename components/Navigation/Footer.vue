@@ -18,11 +18,11 @@
         </div>
         <UiTypographyP class="mt-4">&copy; Added Digital Solutions, 2023</UiTypographyP>
       </div>
-      <div class="grid gap-2 lg:gap-4 text-left lg:text-right mt-8">
-      <h2 class="text-primary text-2xl md:text-3xl font-bold">Added Digital Solutions</h2>
+      <div class="grid gap-2 text-left lg:text-right mt-8">
+      <h2 class="text-primary text-2xl md:text-2xl font-bold">Added Digital Solutions</h2>
       <UiTypographyP class="text-accent capitalize">1st floor, ID Global building, beside Allan pharmacy,<br/>opp Iwo city hall, Iwo, Osun state, nigeria</UiTypographyP>
-      <UiTypographyH2 class="text-primary text-2xl md:text-3xl font-bold">+2348066600820</UiTypographyH2>
-      <UiTypographyH2 class="text-primary text-2xl md:text-3xl font-bold">contact@addeddigital.com</UiTypographyH2>
+      <UiTypographyH2 class="text-primary text-2xl md:text-2xl font-bold">+2348066600820</UiTypographyH2>
+      <UiTypographyH2 class="text-primary text-2xl md:text-2xl font-bold">contact@addeddigital.com</UiTypographyH2>
       </div>
     </div>
   </footer>
