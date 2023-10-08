@@ -39,7 +39,7 @@ onMounted(() =>{
   </header>
 
   <section class="max-w-7xl py-20 container mx-auto px-6 text-accent">
-    <UiTypographyH2>we are ads<span class="text-primary">.</span></UiTypographyH2>
+    <UiTypographyH2>we are added<span class="text-primary">.</span></UiTypographyH2>
     <UiTypographyP class="mt-6">We're a small collective of Award Winning Branding and Digital Marketing specialists with a passion for breathing new life into new and existing brands. Our team considers ourselves to be digital storytellers but the stories we're telling don't belong to us! <br /> <br />ADS gets to know your business inside and out, meeting your team, learning your history and goals and examining your needs to create memorable, stand-out branding that tells the story of your brand.<br /> <br />We're a full-service agency that specialises in branding, print, packaging, web design and digital advertising. Take the first steps and talk to a member of our team today!</UiTypographyP>
     
     <NuxtLink>
@@ -50,7 +50,7 @@ onMounted(() =>{
   <section>
     <div class="bg-light text-accent">
       <div class="pt-20 pb-6 px-6 max-w-7xl container mx-auto block lg:flex gap-8">
-        <UiTypographyH2 class="block min-w-fit">what we do<span class="text-primary">.</span></UiTypographyH2>
+        <UiTypographyH2 class="block min-w-fit mb-8">what we do<span class="text-primary">.</span></UiTypographyH2>
         <div>
           <UiTypographyP>We're an agency that won't bull***t you, let alone try to sell you something. We only recommend things that are in the interest of our clients, and we're here for long-term relationships, not quick wins. We have a “whatever it takes” attitude instilled in us to make sure that projects are serviced way above the required means, delivered on time and within the required deadline every time.<br /><br />The “designer” taking your brief will be responsible for working on the project so they receive the brief first hand (avoiding any loss in important communication), thus understanding the project far better than an account handler passing on the information third hand.<br /><br />At ADS we are proud to have built such a highly skilled and multi-disciplined team. Check out our disciplines overview below!</UiTypographyP>
 
@@ -82,7 +82,7 @@ onMounted(() =>{
 
   </section>
 
-  <CardsReviews />
+  <!-- <CardsReviews /> -->
 </template>
 <script>
 

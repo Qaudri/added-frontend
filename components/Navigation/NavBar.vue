@@ -2,7 +2,7 @@
   <nav :class="menu_revealed ? 'bg-white duration-300 ease-in-out' : 'bg-transparent'" class="w-full absolute">
     <div class="flex container mx-auto items-center justify-between px-6 py-4 w-full">
       <div class="w-36">
-        <NavigationLogo @logoClicked="reloadPage()"></NavigationLogo>
+        <NavigationLogo @logoClicked="console.log('logo clicked')"></NavigationLogo>
       </div>
 
       <UiButtonsMenu @revealMenu="toggleMenu()" />
@@ -42,6 +42,7 @@ export default {
 
   methods: {
     toggleMenu(){
+      console.log('menu button clicked')
       this.menu_revealed = !this.menu_revealed
     },
   },

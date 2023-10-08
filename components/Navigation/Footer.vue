@@ -1,10 +1,29 @@
 <template>
   <footer class="text-accent">
-    <div class="max-w-7xl container mx-auto px-6 pt-20 pb-8 flex justify-between items-center">
-      <div class="w-36" >
-        <NavigationLogo />
+    <div class="max-w-7xl container mx-auto px-6 p-8 lg:flex justify-between items-center">
+      <div class="" >
+        <div class="flex gap-4 items-center">
+        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
+          <img src="@/assets/images/instagram.svg" class="w-6 h-6" alt="">
+        </NuxtLink>
+        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
+          <img src="@/assets/images/facebook.svg" class="w-6 h-6" alt="">
+        </NuxtLink>
+        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
+          <img src="@/assets/images/twitter.svg" class="w-6 h-6" alt="">
+        </NuxtLink>
+        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
+          <img src="@/assets/images/linkedin.svg" class="w-6 h-6" alt="">
+        </NuxtLink>
+        </div>
+        <UiTypographyP class="mt-4">&copy; Added Digital Solutions, 2023</UiTypographyP>
       </div>
-      <UiTypographyP>&copy; Added Digital Solutions, 2023</UiTypographyP>
+      <div class="grid gap-2 lg:gap-4 text-left lg:text-right mt-8">
+      <h2 class="text-primary text-2xl md:text-3xl font-bold">Added Digital Solutions</h2>
+      <UiTypographyP class="text-accent capitalize">1st floor, ID Global building, beside Allan pharmacy,<br/>opp Iwo city hall, Iwo, Osun state, nigeria</UiTypographyP>
+      <UiTypographyH2 class="text-primary text-2xl md:text-3xl font-bold">+2348066600820</UiTypographyH2>
+      <UiTypographyH2 class="text-primary text-2xl md:text-3xl font-bold">contact@addeddigital.com</UiTypographyH2>
+      </div>
     </div>
   </footer>
 </template>
