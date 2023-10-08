@@ -1,33 +1,4 @@
-<script setup>
-import Glide from '@glidejs/glide'
-import { onMounted } from 'vue';
 
-onMounted(() =>{
-  const projects = document.querySelectorAll(`.reviews`)
-  projects.forEach((slider) => {
-    new Glide(slider, {
-      type: 'carousel',
-      focusAt: 'center',
-      autoplay: true,
-      animationDuration: 2000,
-      breakpoints: {
-        768: {
-          perView: 1
-        },
-        1024: {
-          perView: 2
-        },
-        1280: {
-          perView: 3
-        },
-        1536: {
-          perView: 4
-        }
-      }
-      }).mount()
-  })
-})
-</script>
 <template>
   <Head>
     <Title>Home | Added Digital Solutions</Title>
@@ -70,25 +41,18 @@ onMounted(() =>{
   <section class="px-6 py-20 max-w-7xl container mx-auto text-accent">
     <UiTypographyH2>check out some of our work<span class="text-primary">.</span></UiTypographyH2>
     <UiTypographyP class="mt-2">Interested in our work? Check out some of the brand stories we've helped to create. </UiTypographyP>
-    <div class="projects mt-8">
-      <div class="glide__track" data-glide-el="track">
-        <ul class="gap-8 glide__slides">
-          <li v-for="project in projects" :key="project.id" class="glide__slide">
-            <div :style="{ background:`url(${project.imagePath})`}" class="background w-full aspect-square bg-accent"></div>
-          </li>
-        </ul>
-      </div>
-    </div>
 
+    <CarouselsProjects />
   </section>
 
-  <!-- <CardsReviews /> -->
+  <CarouselsReviews />
+
+  <section class="max-w-7xl container mx-auto py-20 px-6 text-center text-accent">
+    <UiTypographyH2>some of our happy clients</UiTypographyH2>
+    <CarouselsClients />
+  </section>
 </template>
 <script>
-
-import image1 from '@/assets/images/service.jpg';
-import image2 from '@/assets/images/creativity.jpg';
-import image3 from '@/assets/images/art.webp';
 export default {
   data() {
     return {
@@ -112,33 +76,6 @@ export default {
           id: 4,
           title: 'marketing & advertising',
           description: 'Quality marketing and advertising creates engagement for your brand. Sourcefour specialise in Digital Marketing, Search Engine Optimisation (SEO) and Pay Per Click advertising',
-        },
-      ],
-
-      projects: [
-        {
-          id: 1,
-          imagePath: image1
-        },
-        {
-          id: 2,
-          imagePath: image2
-        },
-        {
-          id: 3,
-          imagePath: image3
-        },
-        {
-          id: 4,
-          imagePath: image1
-        },
-        {
-          id: 5,
-          imagePath: image2
-        },
-        {
-          id: 6,
-          imagePath: image3
         },
       ],
     }

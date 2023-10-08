@@ -3,10 +3,12 @@
     <div class="bg-light">
       <div class="px-6 pt-20 pb-6 container max-w-7xl mx-auto reviews">
         <div class="glide__track" data-glide-el="track">
-        <ul class="gap-8 glide__slides">
-          <li v-for="review in reviews" :key="project.id" class="glide__slide">
-            <UiTypographyP>"{{ review.review }}"</UiTypographyP>
-            <UiTypographyH2 class="mt-8">{{ review.reviewer }}</UiTypographyH2>
+        <ul class="glide__slides">
+          <li v-for="review in reviews" :key="review.id" class="glide__slide w-full">
+            <div class="w-full">
+              <UiTypographyP>"{{ review.review }}"</UiTypographyP>
+              <UiTypographyH2 class="mt-8">{{ review.reviewer }}</UiTypographyH2>
+            </div>
           </li>
         </ul>
       </div>
@@ -39,13 +41,15 @@ const reviews = [
 
 onMounted(() =>{
   const sliders = document.querySelectorAll(`.reviews`)
-  sliders.forEach((slider) => {
-    new Glide(slider, {
+  sliders.forEach((review) => {
+    new Glide(review, {
       type: 'carousel',
       focusAt: 'center',
-      autoplay: true,
-      animationDuration: 2000,
+      autoplay: 7000,
+      animationDuration: 1000,
       perView: 1,
+      gap: 0,
+      peek: 0,
     }).mount()
   })
 })
