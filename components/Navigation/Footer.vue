@@ -3,13 +3,13 @@
     <div class="max-w-7xl container mx-auto px-6 p-8 md:flex justify-between items-center">
       <div class="" >
         <div class="flex gap-4 items-center">
-        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
+        <NuxtLink to="https://instagram.com/addeddigitalsolutions?igshid=MzRlODBiNWFlZA==" class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
           <img src="@/assets/images/insta.svg" class="w-6 h-6" alt="">
         </NuxtLink>
         <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
           <img src="@/assets/images/facebook.svg" class="w-6 h-6" alt="">
         </NuxtLink>
-        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
+        <NuxtLink to="https://twitter.com/addeddigital?t=OZkFn-mOMALUjGTTFOgQeg&s=09" class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
           <img src="@/assets/images/twitter.svg" class="w-6 h-6" alt="">
         </NuxtLink>
         <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
