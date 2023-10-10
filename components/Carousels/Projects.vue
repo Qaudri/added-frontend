@@ -13,9 +13,10 @@
 import Glide from '@glidejs/glide'
 import { onMounted } from 'vue';
 
-import image1 from '@/assets/images/service.jpg';
-import image2 from '@/assets/images/creativity.jpg';
-import image3 from '@/assets/images/art.webp';
+import image1 from '@/assets/brand/projects/01.jpg';
+import image2 from '@/assets/brand/projects/02.jpg';
+import image3 from '@/assets/brand/projects/03.jpg';
+import image4 from '@/assets/brand/projects/04.jpg';
 const projects = [
   {
     id: 1,
@@ -31,24 +32,16 @@ const projects = [
   },
   {
     id: 4,
-    imagePath: image1
-  },
-  {
-    id: 5,
-    imagePath: image2
-  },
-  {
-    id: 6,
-    imagePath: image3
+    imagePath: image4
   },
 ]
 
 onMounted(() =>{
-  const projects = document.querySelectorAll(`.projects`)
-  projects.forEach((project) => {
+  const works = document.querySelectorAll(`.projects`)
+  works.forEach((project) => {
     new Glide(project, {
       type: 'carousel',
-      focusAt: 0,
+      focusAt: 'center',
       autoplay: true,
       animationDuration: 1500,
       gap: 30,

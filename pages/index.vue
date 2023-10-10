@@ -3,12 +3,13 @@
   <Head>
     <Title>Home | Added Digital Solutions</Title>
   </Head>
-  <header class="relative h-fit pt-40 pb-20 lg:py-0 lg:h-screen grid lg:place-items-end">
+  <CarouselsHero />
+  <!-- <header class="relative h-fit pt-40 pb-20 lg:py-0 lg:h-screen grid lg:place-items-end">
     <div class="max-w-7xl container mx-auto px-6 text-accent lg:flex block justify-between items-center relative">
       <Typewriter class="" />
       <img src="@/assets/images/hero.svg" alt="" class="w-full lg:w-1/2 mt-8 lg:mt-0">
     </div>
-  </header>
+  </header> -->
 
   <section class="max-w-7xl py-20 container mx-auto px-6 text-accent">
     <UiTypographyH2>we are added<span class="text-primary">.</span></UiTypographyH2>
