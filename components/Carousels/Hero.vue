@@ -2,9 +2,19 @@
   <header class="hero">
       <div class="glide__track" data-glide-el="track">
         <div class="glide__slides">
-          <div v-for="portfolio in portfolios" :key="portfolio.id" class="glide__slide ">
-            <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen w-full"></div>
+          <div class="glide__slide">
+            <div class="flex min-h-screen md:h-screen md:items-center lg:items-end max-w-7xl container mx-auto px-6">
+              <div class="md:flex justify-between items-center pt-20 md:pt-0">
+                <Typewriter class="text-accent  md:w-1/2 w-full" />
+                <img src="@/assets/images/hero.svg" alt="" class="md:w-1/2">
+              </div>
+            </div>
           </div>
+          <div v-for="portfolio in portfolios" :key="portfolio.id" class="glide__slide">
+            <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen w-full flex justify-end items-end">
+            </div>
+          </div>
+
         </div>
       </div>
   </header>
@@ -41,7 +51,7 @@ onMounted(() =>{
     new Glide(section, {
       type: 'carousel',
       focusAt: 0,
-      autoplay: true,
+      autoplay: 3000,
       animationDuration: 1000,
       gap: 0,
       perView: 1

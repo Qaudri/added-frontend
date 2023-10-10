@@ -1,8 +1,8 @@
 <template>
   <h1 class="text-6xl xl:text-8xl">
-    We help businesses
+    We help businesses <br />
     <span class="typed-text font-bold">{{typeValue}}</span>
-    <span class="blinking-cursor">|</span>
+    <span class="blinking-cursor text-6xl xl:text-8xl">|</span>
     <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
   </h1>
 </template>
@@ -64,8 +64,6 @@ span.typed-text {
 }
 
 .blinking-cursor {
-  font-size: 4.5rem;
-  color: #F4F4F4;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;

@@ -21,11 +21,8 @@ export default {
   },
   methods: {
     revealMenuEvent(){
-      console.log('click function working')
       this.mobile_nav = !this.mobile_nav
-      console.log('menu toggled')
       this.$emit("toggleMenu")
-      console.log('menu emitted')
     }
   }
 }

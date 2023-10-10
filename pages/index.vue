@@ -4,13 +4,6 @@
     <Title>Home | Added Digital Solutions</Title>
   </Head>
   <CarouselsHero />
-  <!-- <header class="relative h-fit pt-40 pb-20 lg:py-0 lg:h-screen grid lg:place-items-end">
-    <div class="max-w-7xl container mx-auto px-6 text-accent lg:flex block justify-between items-center relative">
-      <Typewriter class="" />
-      <img src="@/assets/images/hero.svg" alt="" class="w-full lg:w-1/2 mt-8 lg:mt-0">
-    </div>
-  </header> -->
-
   <section class="max-w-7xl py-20 container mx-auto px-6 text-accent">
     <UiTypographyH2>we are added<span class="text-primary">.</span></UiTypographyH2>
     <UiTypographyP class="mt-6">We're a small collective of Award Winning Branding and Digital Marketing specialists with a passion for breathing new life into new and existing brands. Our team considers ourselves to be digital storytellers but the stories we're telling don't belong to us! <br /> <br />ADS gets to know your business inside and out, meeting your team, learning your history and goals and examining your needs to create memorable, stand-out branding that tells the story of your brand.<br /> <br />We're a full-service agency that specialises in branding, print, packaging, web design and digital advertising. Take the first steps and talk to a member of our team today!</UiTypographyP>
