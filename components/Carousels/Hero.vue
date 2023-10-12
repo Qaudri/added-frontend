@@ -3,15 +3,17 @@
       <div class="glide__track" data-glide-el="track">
         <div class="glide__slides">
           <div class="glide__slide">
-            <div class="flex h-screen-70 md:h-screen md:items-center lg:items-end max-w-7xl container mx-auto px-6 pb-8 md:pb-0">
-              <div class="flex justify-between items-end md:items-center">
-                <Typewriter class="text-accent  md:w-1/2 w-full" />
-                <img src="@/assets/images/hero.svg" alt="" class="hidden md:block w-1/2">
+            <div class="flex h-screen-50 md:h-screen-60 lg:h-screen items-center md:items-end max-w-7xl container mx-auto px-6 py-8 md:py-0">
+              <div class="flex justify-between items-center w-full">
+                <Typewriter class="text-accent w-full md:w-1/2" />
+                <div class="hidden md:block w-1/2">
+                  <img src="@/assets/images/hero.svg" alt="" class="w-full">
+                </div>
               </div>
             </div>
           </div>
           <div v-for="portfolio in portfolios" :key="portfolio.id" class="glide__slide">
-            <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen-70 md:h-screen w-full flex justify-end items-end">
+            <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen-50 md:h-screen-60 lg:h-screen w-full flex justify-end items-end">
             </div>
           </div>
 
@@ -51,7 +53,7 @@ onMounted(() =>{
     new Glide(section, {
       type: 'carousel',
       focusAt: 0,
-      autoplay: 3000,
+      autoplay: 5000,
       animationDuration: 1000,
       gap: 0,
       perView: 1

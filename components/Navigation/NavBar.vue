@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white duration-300 ease-in-out w-full absolute z-20">
+  <nav class="bg-white duration-300 ease-in-out w-full relative lg:absolute z-0 lg:z-20">
     <div class="flex container mx-auto items-center max-w-7xl justify-between px-6 py-4 w-full">
       <div class="w-36">
         <NavigationLogo></NavigationLogo>
