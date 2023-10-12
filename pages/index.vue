@@ -44,10 +44,22 @@
 
   <section class="max-w-7xl container mx-auto py-20 px-6 text-center text-accent">
     <UiTypographyH2>some of our happy clients</UiTypographyH2>
-    <CarouselsClients />
+    <ul class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center" >
+      <li v-for="image in brands" :key="image.id">
+        <img :src="image.image" class="w-40 mx-auto" alt="">
+      </li>
+    </ul>
   </section>
 </template>
 <script>
+import tb from '@/assets/brand/clients/tb.svg'
+import niffy from '@/assets/brand/clients/niffy.svg'
+import vacations from '@/assets/brand/clients/vacations.svg'
+import naked from '@/assets/brand/clients/naked.svg'
+import one from '@/assets/brand/clients/oneonone.svg'
+import ajwaad from '@/assets/brand/clients/ajwaad.svg'
+import exclusive from '@/assets/brand/clients/exclusive.svg'
+import williams from '@/assets/brand/clients/williams.svg'
 export default {
   data() {
     return {
@@ -73,6 +85,40 @@ export default {
           description: 'Quality marketing and advertising creates engagement for your brand. Sourcefour specialise in Digital Marketing, Search Engine Optimisation (SEO) and Pay Per Click advertising',
         },
       ],
+      brands:[
+        {
+          id: 1,
+          image: tb
+        },
+        {
+          id: 2,
+          image: niffy
+        },
+        {
+          id: 3,
+          image: vacations
+        },
+        {
+          id: 4,
+          image: naked
+        },
+        {
+          id: 5,
+          image: williams
+        },
+        {
+          id: 6,
+          image: one
+        },
+        {
+          id: 7,
+          image: ajwaad
+        },
+        {
+          id: 8,
+          image: exclusive
+        },
+      ]
     }
   },
 }
