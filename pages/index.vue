@@ -48,7 +48,7 @@
 
   <section class="max-w-7xl container mx-auto py-20 px-6 text-center text-accent">
     <UiTypographyH2>some of our happy clients</UiTypographyH2>
-    <ul class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center" >
+    <ul class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 xl:gap-16 place-items-center" >
       <li v-for="image in brands" :key="image.id">
         <img :src="image.image" class="w-40 mx-auto" alt="">
       </li>
