@@ -37,8 +37,12 @@
     <UiTypographyH2>check out some of our work<span class="text-primary">.</span></UiTypographyH2>
     <UiTypographyP class="mt-2">Interested in our work? Check out some of the brand stories we've helped to create. </UiTypographyP>
 
-    <CarouselsProjects />
-  </section>
+      <ul class="mt-8 grid md:grid-cols-3 gap-8">
+        <li v-for="project in projects" :key="project.id">
+          <div :style="{ background:`url(${project.imagePath})`}" class="background w-full aspect-square bg-accent"></div>
+        </li>
+      </ul>
+    </section>
 
   <CarouselsReviews />
 
@@ -60,6 +64,10 @@ import one from '@/assets/brand/clients/oneonone.svg'
 import ajwaad from '@/assets/brand/clients/ajwaad.svg'
 import exclusive from '@/assets/brand/clients/exclusive.svg'
 import williams from '@/assets/brand/clients/williams.svg'
+
+import image1 from '@/assets/brand/projects/01.jpg';
+import image2 from '@/assets/brand/projects/02.jpg';
+import image3 from '@/assets/brand/projects/03.jpg';
 export default {
   data() {
     return {
@@ -117,6 +125,20 @@ export default {
         {
           id: 8,
           image: exclusive
+        },
+      ],
+      projects: [
+        {
+          id: 1,
+          imagePath: image1
+        },
+        {
+          id: 2,
+          imagePath: image2
+        },
+        {
+          id: 3,
+          imagePath: image3
         },
       ]
     }

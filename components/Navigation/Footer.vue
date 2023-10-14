@@ -16,13 +16,14 @@
           <img src="@/assets/images/linkedin.svg" class="w-6 h-6" alt="">
         </NuxtLink>
         </div>
-        <UiTypographyP class="mt-4">&copy; Added Digital Solutions, 2023</UiTypographyP>
+        <UiTypographyP class="mt-4">{{new Date().getFullYear()}} Added Digital Solutions</UiTypographyP>
       </div>
-      <div class="grid gap-2 text-left md:text-right mt-8">
-      <h2 class="text-primary text-2xl font-bold">Added Digital Solutions</h2>
-      <UiTypographyP class="text-accent capitalize">1st floor, ID Global building, beside Allan pharmacy,<br/>opp Iwo city hall, Iwo, Osun state, nigeria</UiTypographyP>
-      <h2 class="text-primary text-2xl font-bold">+2348066600820</h2>
-      <h2 class="text-primary text-2xl font-bold">contact@addeddigital.com</h2>
+
+      <div class="grid gap-2 text-left md:text-right mt-8 md:mt-0">
+        <h2 class="text-primary text-xl font-bold">Added Digital Solutions</h2>
+        <UiTypographyP class="text-accent capitalize">1st floor, ID Global building, beside Allan pharmacy,<br/>opp Iwo city hall, Iwo, Osun state, nigeria</UiTypographyP>
+        <h2 class="text-primary text-xl font-bold">+2348066600820</h2>
+        <h2 class="text-primary text-xl font-bold">contact@addeddigital.com</h2>
       </div>
     </div>
   </footer>

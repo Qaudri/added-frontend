@@ -7,7 +7,7 @@
           <li v-for="review in reviews" :key="review.id" class="glide__slide w-full">
             <div class="w-full">
               <UiTypographyP>"{{ review.review }}"</UiTypographyP>
-              <UiTypographyH2 class="mt-8">{{ review.reviewer }}</UiTypographyH2>
+              <h2 class="font-bold text-xl mt-8">{{ review.reviewer }}</h2>
             </div>
           </li>
         </ul>
