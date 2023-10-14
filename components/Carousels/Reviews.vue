@@ -45,7 +45,7 @@ onMounted(() =>{
     new Glide(review, {
       type: 'carousel',
       focusAt: 'center',
-      autoplay: 7000,
+      autoplay: 5000,
       animationDuration: 1000,
       perView: 1,
       gap: 0,
