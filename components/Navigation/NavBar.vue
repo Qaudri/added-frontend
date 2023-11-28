@@ -15,7 +15,7 @@
             <UiButtonsTertiary>discipline +</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary>academy</UiButtonsTertiary>
+            <UiButtonsTertiary @clicked="$router.push('https://academy.addeddigital.com/')">academy</UiButtonsTertiary>
           </li>
           <li>
             <UiButtonsTertiary>about us</UiButtonsTertiary>
