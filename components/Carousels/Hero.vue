@@ -1,13 +1,19 @@
 <template>
   <header class="hero">
       <div class="glide__track" data-glide-el="track">
-        <div class="glide__slides">
-          <div v-for="portfolio in portfolios" :key="portfolio.id" class="glide__slide">
-            <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen-50 md:h-screen-60 lg:h-screen w-full flex justify-end items-end">
-            </div>
-          </div>
+        <ul class="glide__slides">
+          <li v-for="portfolio in portfolios" :key="portfolio.id" class="glide__slide">
+            <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen-50 md:h-screen-60 lg:h-screen w-full flex justify-center items-center">
+              <div class="bg-black bg-opacity-70 p-10 text-white max-w-3xl">
+                <UiTypographyH2>ultimate solutions for your digital needs<span class="text-primary">.</span></UiTypographyH2>
+                <UiTypographyP>We also provide a wide range of digital marketing and content creation services to help your business reach more customers. Contact us today for a free consultation.</UiTypographyP>
 
-        </div>
+                <UiButtonsTalk class="text-primary w-32 mt-5 cursor-pointer hover:text-secondary duration-300 ease-in-out" />
+              </div>
+            </div>
+          </li>
+
+        </ul>
       </div>
   </header>
 </template>
@@ -22,19 +28,25 @@ import portfolio4 from '@/assets/images/hero/04.jpg';
 const portfolios = [
   {
     id: 1,
-    image: portfolio1
+    image: portfolio1,
+    title: 'ultimate solutions for your digital needs',
+    caption: 'We also provide a wide range of digital marketing and content creation services to help your business reach more customers. Contact us today for a free consultation.'
   },
   {
     id: 2,
-    image: portfolio2
+    image: portfolio2,
+    title: 'We help businesses reach their peaks',
+    caption: ''
   },
   {
     id: 3,
-    image: portfolio3
+    image: portfolio3,
+    title: 'Dummy Text Number Three'
   },
   {
     id: 4,
-    image: portfolio4
+    image: portfolio4,
+    title: 'Dummy Text Number Four'
   },
 ]
 onMounted(() =>{
