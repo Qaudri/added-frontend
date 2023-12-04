@@ -5,10 +5,10 @@
           <li v-for="portfolio in portfolios" :key="portfolio.id" class="glide__slide">
             <div :style="{ background:`url(${portfolio.image})`}" class="background h-screen-50 md:h-screen-60 lg:h-screen w-full flex justify-center items-center">
               <div class="bg-black bg-opacity-70 p-10 text-white max-w-3xl">
-                <UiTypographyH2>ultimate solutions for your digital needs<span class="text-primary">.</span></UiTypographyH2>
-                <UiTypographyP>We also provide a wide range of digital marketing and content creation services to help your business reach more customers. Contact us today for a free consultation.</UiTypographyP>
+                <UiTypographyH2 class="uppercase">ultimate solutions for your digital needs<span class="text-primary">.</span></UiTypographyH2>
+                <UiTypographyP class="mt-6">We also provide a wide range of digital marketing and content creation services to help your business reach more customers. Contact us today for a free consultation.</UiTypographyP>
 
-                <UiButtonsTalk class="text-primary w-32 mt-5 cursor-pointer hover:text-secondary duration-300 ease-in-out" />
+                <UiButtonsTalk class="text-primary w-32 mt-8 cursor-pointer hover:text-secondary duration-300 ease-in-out" />
               </div>
             </div>
           </li>
