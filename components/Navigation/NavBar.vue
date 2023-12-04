@@ -12,13 +12,13 @@
             <UiButtonsTertiary @clicked="$router.push({path: '/'})">home</UiButtonsTertiary>
           </li>
           <li>
-            <UiButtonsTertiary>discipline +</UiButtonsTertiary>
-          </li>
-          <li>
-            <NuxtLink class="font-semibold text-sm xl:text-base 2xl:text-lg hover:text-primary ease-in-out duration-300  hover:border-primary select-none text-left outline-none text-accent" to="https://academy.addeddigital.com/">academy</NuxtLink>
+            <UiButtonsTertiary @clicked="$router.push('/projects')">projects</UiButtonsTertiary>
           </li>
           <li>
             <UiButtonsTertiary @clicked="$router.push({name: 'about'})">about us</UiButtonsTertiary>
+          </li>
+          <li>
+            <NuxtLink class="font-semibold text-sm xl:text-base 2xl:text-lg hover:text-primary ease-in-out duration-300  hover:border-primary select-none text-left outline-none text-accent h-2" to="https://academy.addeddigital.com/">academy</NuxtLink>
           </li>
           <li>
             <UiButtonsTertiary @clicked="test">blog</UiButtonsTertiary>

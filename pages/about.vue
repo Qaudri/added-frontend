@@ -1,4 +1,7 @@
 <template>
+  <Head>
+    <Title>About | Added Digital Solutions</Title>
+  </Head>
   <header id="hero" class="h-screen-50 md:h-screen-60 lg:h-screen flex items-center justify-center">
     <div class="bg-black bg-opacity-70 p-10 text-white max-w-3xl">
       <UiTypographyH2 class="uppercase">about us<span class="text-primary">.</span></UiTypographyH2>
