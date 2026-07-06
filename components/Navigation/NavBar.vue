@@ -24,10 +24,11 @@
 
       <div class="ml-auto flex items-center gap-3">
         <NuxtLink
-          to="mailto:hello@addeddigital.com"
-          class="hidden rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold tracking-[0.2em] text-white transition-all duration-200 ease-in-out hover:border-white/60 hover:bg-white/20 hover:text-white md:inline-flex"
+          to="/contact"
+          class="hidden rounded-full bg-white px-4 py-2 text-sm font-semibold text-primary transition-all duration-200 ease-in-out hover:scale-105 md:flex items-center gap-2"
         >
           Contact
+          <ArrowUpRight color="#058182" :stroke-width="2" :size="18" />
         </NuxtLink>
 
         <UiButtonsMenu
@@ -43,6 +44,7 @@
     <!-- Overlay: click to close, also dims the page so the drawer reads as modal -->
     <Transition name="fade">
       <div
+        :style="{ top: `${navHeight}px`, height: `calc(100vh - ${navHeight}px)` }"
         v-if="menu_revealed"
         class="fixed inset-0 z-[140] bg-black/50 md:hidden"
         aria-hidden="true"
@@ -62,12 +64,12 @@
       class="fixed right-0 z-[150] w-3/4 bg-primary shadow-xl outline-none duration-150 ease-in-out md:hidden"
       @keydown="onDrawerKeydown"
     >
-      <ul class="flex flex-col items-start gap-4 px-8 pt-10">
-        <li v-for="item in navItems" :key="item.to" class="w-full text-left">
+      <ul class="flex flex-col items-stretch gap-0 px-8 pt-10">
+        <li v-for="item in navItems" :key="item.to" class="w-full border-b border-white/20 py-4 text-left last:border-b-0">
           <NuxtLink
             :to="item.to"
             :aria-current="isActive(item.to) ? 'page' : undefined"
-            class="hanken inline-flex items-center px-1 py-1.5 text-sm font-medium tracking-[0.2em] text-white opacity-80 transition-all duration-200 ease-in-out hover:border-b-2 hover:border-white hover:opacity-100 focus-visible:border-b-2 focus-visible:border-white focus-visible:opacity-100"
+            class="hanken inline-flex items-center text-sm font-medium tracking-widest text-white opacity-80 transition-all duration-200 ease-in-out hover:border-b-2 hover:border-white hover:opacity-100 focus-visible:border-b-2 focus-visible:border-white focus-visible:opacity-100"
             :class="isActive(item.to)
               ? 'border-b-2 border-white font-semibold opacity-100'
               : 'border-b-2 border-transparent'"
@@ -77,13 +79,13 @@
           </NuxtLink>
         </li>
 
-        <li class="w-full pt-2 text-left">
+        <li class="w-full py-4 text-left">
           <NuxtLink
-            to="mailto:hello@addeddigital.com"
-            class="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold tracking-[0.2em] text-white transition-all duration-200 ease-in-out hover:border-white/60 hover:bg-white/20 focus-visible:border-white/60 focus-visible:bg-white/20"
-            @click="closeMenu"
+            to="/contact"
+            class="rounded-full bg-white px-4 py-2 text-sm font-semibold text-primary transition-all duration-200 ease-in-out hover:scale-105 flex w-fit items-center gap-2"
           >
             Contact
+            <ArrowUpRight color="#058182" :stroke-width="2" :size="18" />
           </NuxtLink>
         </li>
       </ul>
@@ -92,6 +94,8 @@
 </template>
 
 <script setup lang="ts">
+import { ArrowUpRight } from '@lucide/vue';
+
 const route = useRoute()
 const menu_revealed = ref(false)
 const emit = defineEmits<{ (e: 'height-change', height: number): void }>()
