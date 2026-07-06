@@ -6,7 +6,6 @@
   </div>
 </template>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -14,16 +13,24 @@ html {
 
 body {
   overflow-y: visible;
-	position: relative;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+body, p, span, a, button, input, textarea, select {
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hanken Grotesk', sans-serif;
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
-  width:0px;
+  width: 0px;
   cursor: pointer;
 }
 </style>
