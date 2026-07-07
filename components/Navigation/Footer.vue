@@ -1,30 +1,92 @@
 <template>
-  <footer class="text-accent">
-    <div class="max-w-7xl container mx-auto px-6 p-8 md:flex justify-between items-center">
-      <div class="" >
-        <div class="flex gap-4 items-center">
-        <NuxtLink to="https://instagram.com/addeddigitalsolutions?igshid=MzRlODBiNWFlZA==" class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
-          <img src="@/assets/images/insta.svg" class="w-6 h-6" alt="">
-        </NuxtLink>
-        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
-          <img src="@/assets/images/facebook.svg" class="w-6 h-6" alt="">
-        </NuxtLink>
-        <NuxtLink to="https://twitter.com/addeddigital?t=OZkFn-mOMALUjGTTFOgQeg&s=09" class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
-          <img src="@/assets/images/twitter.svg" class="w-6 h-6" alt="">
-        </NuxtLink>
-        <NuxtLink class="border-[3px] border-accent rounded-md w-10 h-10 grid place-items-center">
-          <img src="@/assets/images/linkedin.svg" class="w-6 h-6" alt="">
-        </NuxtLink>
+  <footer class="bg-primary-dark py-16">
+    <Container>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <div>
+          <div class="w-36 mb-4">
+            <NavigationLogo class="text-primary" />
+          </div>
+          <p class="text-base text-gray-400">
+            Breathing new life into brands.
+            Award-winning specialists in digital
+            storytelling.
+          </p>
+
+          <div class="mt-6 flex gap-6">
+            <NuxtLink class="bg-white/10 hover:bg-white/25 ease-in-out duration-200 w-10 h-10 rounded-full grid place-content-center">
+              <Share2 color="white" :size="18" />
+            </NuxtLink>
+            <NuxtLink class="bg-white/10 hover:bg-white/25 ease-in-out duration-200 w-10 h-10 rounded-full grid place-content-center">
+              <Link2 color="white" :size="18" />
+            </NuxtLink>
+          </div>
         </div>
-        <UiTypographyP class="mt-4">{{new Date().getFullYear()}} Added Digital Solutions</UiTypographyP>
+
+        <div>
+          <h6 class="text-base text-primary-light">Company</h6>
+          <ul class="mt-2 space-y-4">
+            <li>
+              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">Home</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">About Us</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/services">Services</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/blog">Blog</NuxtLink>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="text-base text-primary-light">Services</h6>
+          <ul class="mt-2 space-y-4">
+            <li>
+              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">Branding</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">Web Design</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/services">Marketing</NuxtLink>
+            </li>
+            <li>
+              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/blog">SEO Strategy</NuxtLink>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="text-base text-primary-light m-0">Location</h6>
+          <p class="my-4 text-gray-400">
+            1st floor, ID Global building, <br />
+            beside Allan pharmacy, opp Iwo city hall, <br/>
+            Iwo, Osun state, Nigeria
+          </p>
+          <NuxtLink
+            to="mailto:contact@addeddigital.com"
+            class="block max-w-full truncate text-primary-light font-bold transition duration-200 ease-in-out hover:text-white"
+          >
+            contact@addeddigital.com
+          </NuxtLink>
+        </div>
       </div>
 
-      <div class="grid gap-2 text-left md:text-right mt-8 md:mt-0">
-        <h2 class="text-primary text-xl font-bold">Added Digital Solutions</h2>
-        <UiTypographyP class="text-accent capitalize">1st floor, ID Global building, beside Allan pharmacy,<br/>opp Iwo city hall, Iwo, Osun state, nigeria</UiTypographyP>
-        <h2 class="text-primary text-xl font-bold">+2348066600820</h2>
-        <h2 class="text-primary text-xl font-bold">contact@addeddigital.com</h2>
+      <div class="my-6 h-[1px] bg-primary-light/25"></div>
+
+      <div class="flex flex-wrap gap-8 align-items justify-between mt-8">
+        <p class="text-sm text-gray-400">&copy; {{ new Date().getFullYear() }} Added Digital Solutions. All rights reserved.</p>
+
+        <div class="flex gap-6">
+          <NuxtLink to="/privacy-policy" class="text-gray-400 hover:text-primary-light ease-in-out duration-200 text-sm">Privacy Policy</NuxtLink>
+          <NuxtLink to="/terms-of-service" class="text-gray-400 hover:text-primary-light ease-in-out duration-200 text-sm">Terms of Service</NuxtLink>
+        </div>
       </div>
-    </div>
+    </Container>
   </footer>
 </template>
+<script setup lang="ts">
+import { Share2, Link2 } from '@lucide/vue'
+</script>
