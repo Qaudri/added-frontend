@@ -1,6 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+    './components/**/*.{vue,js,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './app.vue',
+    './plugins/**/*.{js,ts}',
+  ],
   theme: {
     extend: {
       colors: {
@@ -12,6 +18,17 @@ module.exports = {
         'pink-dark': '#7D2A78',
         'accent': '#666666',
         'light': '#F4F4F4'
+      },
+
+      animation: {
+        float: 'float 5s ease-in-out infinite',
+      },
+
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0) rotate(var(--arrow-rotation, 0deg))' },
+          '50%': { transform: 'translateY(-10px) rotate(var(--arrow-rotation, 0deg))' },
+        },
       },
 
       height: theme => ({
