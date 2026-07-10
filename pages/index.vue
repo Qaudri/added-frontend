@@ -171,6 +171,73 @@
       </div>
     </Container>
   </section>
+
+  <section id="testimonials" class="bg-[#F5F3F3] py-32">
+    <Container class="space-y-16">
+      <UiTypographyH2 class="text-center">Trusted by Brands, Backed by Stories</UiTypographyH2>
+      <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <li class="bg-white border border-gray-200 rounded-2xl p-8 space-y-6">
+          <div class="text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote-icon lucide-quote"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          </div>
+
+          <UiTypographyP class="italic">
+            It was a no brainer for us to work with you. We loved all your concept work and you have delivered superbly on everything: the branding, website, social media, etc.
+          </UiTypographyP>
+
+          <div class="flex gap-4 items-center">
+            <div class="w-12 h-12 bg-pink rounded-full grid place-content-center text-pink-dark font-bold">
+              WD
+            </div>
+            <div>
+              <UiTypographyP class="font-bold m-0">Will Douglas</UiTypographyP>
+              <span class="text-xs text-gray-400">Founder, Local Craft</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="bg-white border border-gray-200 rounded-2xl p-8 space-y-6 md:hidden lg:block">
+          <div class="text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote-icon lucide-quote"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          </div>
+
+          <UiTypographyP class="italic">
+            Added have being exceptional throughout this process, they have constantly gone above and beyond working with us on a very challenging brief.
+          </UiTypographyP>
+
+          <div class="flex gap-4 items-center">
+            <div class="w-12 h-12 bg-primary rounded-full grid place-content-center text-white font-bold">
+              PB
+            </div>
+            <div>
+              <UiTypographyP class="font-bold m-0">Paul Bunyan</UiTypographyP>
+              <span class="text-xs text-gray-400">Marketing Lead</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="bg-white border border-gray-200 rounded-2xl p-8 space-y-6">
+          <div class="text-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-quote-icon lucide-quote"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg>
+          </div>
+
+          <UiTypographyP class="italic">
+            The whole team were very engaging, warm and welcoming whilst being experts in their trade. They very much bought into our ambitions.
+          </UiTypographyP>
+
+          <div class="flex gap-4 items-center">
+            <div class="w-12 h-12 bg-secondary/20 rounded-full grid place-content-center text-secondary font-bold">
+              BC
+            </div>
+            <div>
+              <UiTypographyP class="font-bold m-0">Berry Clarkson</UiTypographyP>
+              <span class="text-xs text-gray-400">Operations Director</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </Container>
+  </section>
 </template>
 
 <script setup lang="ts">
