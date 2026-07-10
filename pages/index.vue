@@ -52,8 +52,8 @@
           memorable, stand-out branding.
         </UiTypographyP>
       </div>
-      <ul class="grid lg:grid-cols-2 gap-6">
-        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid md:grid-cols-2">
+      <ul class="grid md:grid-cols-2 gap-6">
+        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid lg:grid-cols-2">
           <div class="space-y-2">
             <span class="hanken text-base text-[#923D8B]">01</span>
             <h4 class="text-2xl">Branding & Positioning</h4>
@@ -65,7 +65,7 @@
           </div>
           <img src="/images/branding.jpg" alt="Branding" class="rounded-lg h-[200px] object-cover" >
         </li>
-        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid md:grid-cols-2">
+        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid lg:grid-cols-2">
           <div class="space-y-2">
             <span class="hanken text-base text-primary">02</span>
             <h4 class="text-2xl">Web & mobile Design</h4>
@@ -76,7 +76,7 @@
           </div>
           <img src="/images/digital.jpg" alt="Branding" class="rounded-lg h-[200px] object-cover" >
         </li>
-        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid md:grid-cols-2">
+        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid lg:grid-cols-2">
           <div class="space-y-2">
             <span class="hanken text-base text-secondary">03</span>
             <h4 class="text-2xl">Packaging & Instore</h4>
@@ -88,7 +88,7 @@
           </div>
           <img src="/images/packaging.jpg" alt="Branding" class="rounded-lg h-[200px] object-cover" >
         </li>
-        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid md:grid-cols-2">
+        <li class="bg-white border-gray-200 border rounded-2xl p-8 gap-8 grid lg:grid-cols-2">
           <div class="space-y-2">
             <span class="hanken text-base text-[#923D8B]">04</span>
             <h4 class="text-2xl">Marketing & Advertising</h4>
