@@ -12,10 +12,10 @@
               <NuxtLink
                 :to="item.to"
                 :aria-current="isActive(item.to) ? 'page' : undefined"
-                class="hanken text-sm font-medium tracking-widest text-white opacity-80 transition-all duration-200 ease-in-out hover:text-white hover:opacity-100 lg:text-base"
+                class="hanken text-sm font-medium tracking-widest text-white transition-all duration-200 ease-in-out  lg:text-base"
                 :class="isActive(item.to)
-                  ? 'border-b-2 border-white font-bold text-white opacity-100'
-                  : 'border-b-2 border-transparent opacity-80'"
+                  ? 'border-b-2 border-white font-bold opacity-100'
+                  : 'border-b-2 border-transparent opacity-80 hover:opacity-100'"
               >
                 {{ item.label }}
               </NuxtLink>
