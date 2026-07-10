@@ -26,16 +26,16 @@
           <h6 class="text-base text-primary-light">Company</h6>
           <ul class="mt-2 space-y-4">
             <li>
-              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">Home</NuxtLink>
+              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Home</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">About Us</NuxtLink>
+              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">About Us</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/services">Services</NuxtLink>
+              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Services</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/blog">Blog</NuxtLink>
+              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Blog</NuxtLink>
             </li>
           </ul>
         </div>
@@ -44,16 +44,16 @@
           <h6 class="text-base text-primary-light">Services</h6>
           <ul class="mt-2 space-y-4">
             <li>
-              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">Branding</NuxtLink>
+              <NuxtLink to="/" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Branding</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/about">Web Design</NuxtLink>
+              <NuxtLink to="/about" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Web Design</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/services">Marketing</NuxtLink>
+              <NuxtLink to="/services" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">Marketing</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200" href="/blog">SEO Strategy</NuxtLink>
+              <NuxtLink to="/blog" class="text-gray-400 hover:text-primary-light ease-in-out duration-200">SEO Strategy</NuxtLink>
             </li>
           </ul>
         </div>
