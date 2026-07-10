@@ -103,6 +103,56 @@
       </ul>
     </Container>
   </section>
+
+  <section class="bg-primary-dark py-32" id="Process">
+    <Container class="grid md:grid-cols-2 gap-12 xl:gap-16 items-center">
+      <div class="text-white space-y-4">
+        <UiTypographyP class="text-primary-light uppercase">OUR WORK PROCESS</UiTypographyP>
+        <UiTypographyH2>Our Process design, and Deliver Simplified</UiTypographyH2>
+        <UiTypographyP>We follow a simple, results-driven process to bring your vision to life. From
+        understanding your goals to designing and delivering real impact.</UiTypographyP>
+        <ul class="space-y-8 pt-8">
+          <li class="flex items-center group gap-6">
+            <span class="h-12 w-12 rounded-full grid place-content-center border border-primary/30 group-hover:bg-primary/20 ease-in-out duration-200 text-primary-light font-bold">01</span>
+
+            <div>
+              <h4 class="text-gray-200 group-hover:text-pink ease-in-out duration-200 text-xl">Discussion</h4>
+              <p class="text-sm">Getting to know your business inside and out.</p>
+            </div>
+          </li>
+          <li class="flex items-center group gap-6">
+            <span class="h-12 w-12 rounded-full grid place-content-center border border-primary/30 group-hover:bg-primary/20 ease-in-out duration-200 text-primary-light font-bold">02</span>
+
+            <div>
+              <h4 class="text-gray-200 group-hover:text-pink ease-in-out duration-200 text-xl">Ideas & Concepts</h4>
+              <p class="text-sm">Crafting the narrative that belongs to your brand.</p>
+            </div>
+          </li>
+          <li class="flex items-center group gap-6">
+            <span class="h-12 w-12 rounded-full grid place-content-center border border-primary/30 group-hover:bg-primary/20 ease-in-out duration-200 text-primary-light font-bold">03</span>
+
+            <div>
+              <h4 class="text-gray-200 group-hover:text-pink ease-in-out duration-200 text-xl">Design</h4>
+              <p class="text-sm">Turning concepts into high-impact visuals.</p>
+            </div>
+          </li>
+          <li class="flex items-center group gap-6">
+            <span class="h-12 w-12 rounded-full grid place-content-center border border-primary/30 group-hover:bg-primary/20 ease-in-out duration-200 text-primary-light font-bold">04</span>
+
+            <div>
+              <h4 class="text-gray-200 group-hover:text-pink ease-in-out duration-200 text-xl">Development</h4>
+              <p class="text-sm">Building the final digital story for the world to see.</p>
+            </div>
+          </li>
+        </ul>
+      </div> 
+      <div class="relative">
+        <div class="bg-pink-dark/50 rounded-full h-32 aspect-square absolute top-0 right-0 blur-3xl"></div>
+        <div class="bg-primary/50 rounded-full h-32 aspect-square absolute bottom-0 left-0 blur-3xl"></div>
+        <img src="/images/process.jpg" alt="Our Process" class="rounded-3xl md:h-[600px] object-cover w-full">
+      </div>
+    </Container>  
+  </section>
 </template>
 
 <script setup lang="ts">
