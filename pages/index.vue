@@ -4,8 +4,8 @@
   <section class="isolate py-16" id="About">
     <Container class="space-y-16">
       <div class="grid gap-6 lg:gap-10 lg:grid-cols-2 xl:gap-12 items-end">
-        <div class="grid gap-2">
-          <UiTypographyP class="text-primary uppercase">About Us</UiTypographyP>
+        <div class="space-y-2">
+          <UiTypographyP class="text-primary uppercase tracking-widest">About Us</UiTypographyP>
           <UiTypographyH2>Smart, fast, and Creative <br> —<em class="text-primary">we are Added.</em></UiTypographyH2>
         </div>
         <UiTypographyP>
@@ -107,7 +107,7 @@
   <section class="bg-primary-dark py-32" id="Process">
     <Container class="grid md:grid-cols-2 gap-12 xl:gap-16 items-center">
       <div class="text-white space-y-4">
-        <UiTypographyP class="text-primary-light uppercase">OUR WORK PROCESS</UiTypographyP>
+        <UiTypographyP class="text-primary-light uppercase tracking-widest">OUR WORK PROCESS</UiTypographyP>
         <UiTypographyH2>Our Process design, and Deliver Simplified</UiTypographyH2>
         <UiTypographyP>We follow a simple, results-driven process to bring your vision to life. From
         understanding your goals to designing and delivering real impact.</UiTypographyP>
@@ -152,6 +152,24 @@
         <img src="/images/process.jpg" alt="Our Process" class="rounded-3xl md:h-[600px] object-cover w-full">
       </div>
     </Container>  
+  </section>
+
+  <section id="Portfolio" class="py-32">
+    <Container class="space-y-16">
+      <div class="flex flex-wrap justify-between items-end gap-6 lg:gap-10 xl:gap-12">
+        <div class="space-y-2">
+          <UiTypographyP class="text-primary uppercase tracking-widest">portfolio</UiTypographyP>
+          <UiTypographyH2>See All <span class="text-primary hanken">Our Latest</span><br> Creative Work</UiTypographyH2>
+        </div>
+        <NuxtLink to="/portfolio"
+        class="bg-pink text-pink-dark rounded-full py-3 px-6 hover:-translate-y-2 duration-200 ease-in-out">View All Works</NuxtLink>
+      </div>
+      <div class="grid md:grid-cols-2 gap-8">
+        <img src="/images/portfolio1.jpg" alt="Portfolio Item" class="rounded-2xl h-[450px] object-cover w-full"/>
+        <img src="/images/portfolio2.jpg" alt="Portfolio Item" class="rounded-2xl h-[450px] object-cover w-full"/>
+        <img src="/images/portfolio3.jpg" alt="Portfolio Item" class="rounded-2xl h-[450px] object-cover w-full md:col-span-2"/>
+      </div>
+    </Container>
   </section>
 </template>
 
