@@ -238,9 +238,57 @@
       </ul>
     </Container>
   </section>
+
+  <section id="cta" class="py-32 bg-gradient-to-br from-primary/10 to-pink-dark/30">
+    <Container class="grid lg:grid-cols-2 gap-16">
+      <div class="space-y-8">
+        <UiTypographyH2>Have a Project in Mind? <em class="text-primary">— Let's Talk</em></UiTypographyH2>
+        <UiTypographyP>
+          Good design isn't just about aesthetics—it's about results. Learn how our thoughtful UX strategies can turn casual visitors into loyal customers.
+        </UiTypographyP>
+        <div class="space-y-6">
+          <NuxtLink to="tel:+2348066600820" class="flex gap-6 items-center">
+            <div class="bg-white shadow-md rounded-full w-14 h-14 grid place-content-center">
+              <Phone color="#058182" :size="18"></Phone>
+            </div>
+            <div>
+              <span class="text-sm">Give us a call</span>
+              <UiTypographyP class="text-xl font-bold">+234 806 660 0820</UiTypographyP>
+            </div>
+          </NuxtLink>
+          <NuxtLink to="mailto:contact@addeddigital.com" class="flex gap-6 items-center">
+            <div class="bg-white shadow-md rounded-full w-14 h-14 grid place-content-center">
+              <Mail color="#058182" :size="18"></Mail>
+            </div>
+            <div>
+              <span class="text-sm">Send an email</span>
+              <UiTypographyP class="text-xl font-bold">contact@addeddigital.com</UiTypographyP>
+            </div>
+          </NuxtLink>
+
+        </div>
+      </div>
+
+      <form action="" class="bg-white rounded-3xl p-8 lg:p-10 grid grid-cols-2 gap-6">
+        <FormInput label="Full Name" placeholder="John Doe" type="text"/>
+        <FormInput label="Email" placeholder="john@example.com" type="email"/>
+        <FormSelect
+          v-model:selected-option="service"
+          label="How can we help?"
+          placeholder="Select a service"
+          :options="serviceOptions"
+          class="col-span-2"
+        />
+        <FormTextarea label="Your Message" placeholder="Tell us about your project" class="col-span-2" :rows="6" />
+        <FormButton class="col-span-2">Send Your Message</FormButton>
+      </form>
+    </Container>
+  </section>
 </template>
 
 <script setup lang="ts">
+import { Phone, Mail } from '@lucide/vue';
+
 useSeoMeta({
   title: 'Home',
   description: 'Added creates fast, modern websites and digital experiences that help ambitious brands grow online.',
@@ -259,4 +307,7 @@ useHead({
     { rel: 'canonical', href: 'https://addeddigital.com/' }
   ]
 })
+
+const service = ref<string | undefined>(undefined)
+const serviceOptions = ['Branding & Design', 'Web & Mobile', 'SEO & Marketing']
 </script>
