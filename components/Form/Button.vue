@@ -20,7 +20,7 @@
 <script>
 import { Loader } from '@lucide/vue';
 export default {
-  components: [Loader],
+  components: {Loader},
   name: "LoadingButton",
   props: {
       loading: Boolean,
