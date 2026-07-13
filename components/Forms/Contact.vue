@@ -13,7 +13,7 @@
         <FormButton class="col-span-2">Send Your Message</FormButton>
     </form>
 </template>
-<script setup>
+<script setup lang="ts">
 const service = ref<string | undefined>(undefined)
 const serviceOptions = ['Branding & Design', 'Web & Mobile', 'SEO & Marketing']
 </script>
