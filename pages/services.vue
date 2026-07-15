@@ -29,8 +29,121 @@
             </div>
         </Container>
     </section>
-
+    <section class="py-32">
+        <Container class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-sm text-primary hanken tracking-widest">
+                    CORE IDENTITY
+                </span>
+                <UiTypographyH2 class="mt-2 mb-6">
+                    Branding & Positioning That <span class="text-primary">Commands Authority</span>
+                </UiTypographyH2>
+                <UiTypographyP>
+                    Added helps businesses define their unique identity and market position in a crowded digital landscape. We don't just design logos; we build cohesive brand ecosystems that communicate your values and vision at every touchpoint.
+                </UiTypographyP>
+                <ul class="grid md:grid-cols-2 gap-4 mt-6">
+                    <li class="col-span-2 mb-4 flex items-center gap-2 font-semibold hanken text-base">
+                        <ListChecks :size="18" class="mt-0.5 shrink-0 text-primary" :stroke-width="3" />
+                        <span>What your business gets</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-primary" />
+                        <span>Increased brand recognition & awareness</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-primary" />
+                        <span>Built-in consumer trust & loyalty</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-primary" />
+                        <span>Ability to command premium pricing</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-primary" />
+                        <span>Clear differentiation from competitors</span>
+                    </li>
+                </ul>
+            </div>
+            <img src="/images/portfolio3.jpg" class="w-full object-cover aspect-[4/3] rounded-3xl" />
+        </Container>
+    </section>
+    <section class="py-32 bg-[#F8F9FA]">
+        <Container class="grid lg:grid-cols-2 gap-16 items-center">
+            <img src="/images/marketing.jpg" class="w-full object-cover aspect-[4/3] rounded-3xl" />
+            <div>
+                <span class="text-sm text-secondary hanken tracking-widest">
+                    GROWTH ENGINES
+                </span>
+                <UiTypographyH2 class="mt-2 mb-6">
+                    Strategic Marketing That  <span class="text-secondary">Drives Conversion</span>
+                </UiTypographyH2>
+                <UiTypographyP>
+                    We focus on running social media ads that convert, high-quality content creation, and full-scale social media management. Our data-driven approach ensures your message reaches the right audience at the right time on the right platforms.
+                </UiTypographyP>
+                <ul class="grid md:grid-cols-2 gap-4 mt-6">
+                    <li class="col-span-2 mb-4 flex items-center gap-2 font-semibold hanken text-base">
+                        <TrendingUp :size="18" class="mt-0.5 shrink-0 text-secondary" :stroke-width="3" />
+                        <span>What your business gets</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-secondary" />
+                        <span>Consistent, high-quality lead generation</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-secondary" />
+                        <span>Rapid & sustainable audience growth</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-secondary" />
+                        <span>Measurable and optimized ROI</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-secondary" />
+                        <span>Enhanced social proof & engagement</span>
+                    </li>
+                </ul>
+            </div>
+        </Container>
+    </section>
+        <section class="py-32">
+        <Container class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <span class="text-sm text-[#923D8B] hanken tracking-widest">
+                    DIGITAL FOUNDATION
+                </span>
+                <UiTypographyH2 class="mt-2 mb-6">
+                    High-Performance <span class="text-[#923D8B]">Digital Experiences </span>
+                </UiTypographyH2>
+                <UiTypographyP>
+                    Added builds high-performing, responsive websites that serve as your brand's digital headquarters. We combine cutting-edge development with user-centric design to create seamless experiences that guide visitors through a curated journey.
+                </UiTypographyP>
+                <ul class="grid md:grid-cols-2 gap-4 mt-6">
+                    <li class="col-span-2 mb-4 flex items-center gap-2 font-semibold hanken text-base">
+                        <LaptopMinimal :size="18" class="mt-0.5 shrink-0 text-[#923D8B]" :stroke-width="3" />
+                        <span>Business Impact</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-[#923D8B]" />
+                        <span>A professional home that converts visitors</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-[#923D8B]" />
+                        <span>Scalable architecture for future growth</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-[#923D8B]" />
+                        <span>Optimized speed & mobile accessibility</span>
+                    </li>
+                    <li class="grid grid-cols-[18px_1fr] items-start gap-x-3 text-base leading-7">
+                        <CircleCheckBig :size="18" class="mt-1 shrink-0 text-[#923D8B]" />
+                        <span>Improved search engine rankings</span>
+                    </li>
+                </ul>
+            </div>
+            <img src="/images/digital.jpg" class="w-full object-cover aspect-[4/3] rounded-3xl" />
+        </Container>
+    </section>
 </template>
 <script setup>
-import { Rocket } from '@lucide/vue';
+import { Rocket, ListChecks, CircleCheckBig, TrendingUp, LaptopMinimal } from '@lucide/vue';
 </script>
