@@ -15,6 +15,7 @@ body {
   overflow-y: visible;
   position: relative;
   font-family: 'Inter', sans-serif;
+  color: #0A0A0A;
 }
 
 body, p, span, a, button, input, textarea, select {
