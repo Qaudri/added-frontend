@@ -105,7 +105,7 @@
             </div>
         </Container>
     </section>
-        <section class="py-32">
+    <section class="py-32">
         <Container class="grid lg:grid-cols-2 gap-16 items-center">
             <div>
                 <span class="text-sm text-[#923D8B] hanken tracking-widest">
@@ -141,6 +141,55 @@
                 </ul>
             </div>
             <img src="/images/digital.jpg" class="w-full object-cover aspect-[4/3] rounded-3xl" />
+        </Container>
+    </section>
+    <section class="py-32 bg-[#F8F9FA]">
+        <Container class="space-y-16">
+            <div class="flex items-center justify-between gap-6">
+                <div>
+                    <span class="text-sm text-primary hanken tracking-widest">
+                        HOW WE WORK
+                    </span>
+                    <UiTypographyH2>
+                        Streamlined Path to <span class="text-primary">Digital Success</span>
+                    </UiTypographyH2>
+                </div>
+                <div class="bg-primary/20 w-0.5 h-16 hidden lg:block"></div>    
+                <UiTypographyP>
+                    We follow a rigorous yet flexible creative process that ensures your project is delivered on time, within budget, and way above expectations.
+                </UiTypographyP>
+            </div>
+            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-8">
+                <div class="space-y-4">
+                    <span class="bg-white border border-gray-200 rounded-xl h-16 w-16 grid place-content-center text-primary shadow-2xl hanken font-semibold text-2xl">01</span>
+                    <h4 class="hanken font-medium text-xl">Discussion</h4>
+                    <UiTypographyP class="text-neutral-500">
+                        We dive deep into your brand's DNA,goals, and target audience to build asolid brief.
+                    </UiTypographyP>
+                </div>
+                <div class="space-y-4 mt-12">
+                    <span class="bg-white border border-gray-200 rounded-xl h-16 w-16 grid place-content-center text-[#923D8B] shadow-2xl hanken font-semibold text-2xl">02</span>
+                    <h4 class="hanken font-medium text-xl">Ideas & Concepts</h4>
+                    <UiTypographyP class="text-neutral-500">
+                        Exploring multiple creative directions and strategies to find the perfect fit for your vision.
+                    </UiTypographyP>
+                </div>
+                <div class="space-y-4 lg:mt-24">
+                    <span class="bg-white border border-gray-200 rounded-xl h-16 w-16 grid place-content-center text-primary shadow-2xl hanken font-semibold text-2xl">03</span>
+                    <h4 class="hanken font-medium text-xl">Design</h4>
+                    <UiTypographyP class="text-neutral-500">
+                        The magic happens here—crafting visuals, interfaces, and experiences that resonate.
+                    </UiTypographyP>
+                </div>
+                <div class="space-y-4 md:mt-12 lg:mt-24">
+                    <span class="bg-primary border border-gray-200 rounded-xl h-16 w-16 grid place-content-center text-white shadow-2xl hanken font-semibold text-2xl">04</span>
+                    <h4 class="hanken font-medium text-xl">Development</h4>
+                    <UiTypographyP class="text-neutral-500">
+                        The magic happens here—crafting visuals, interfaces, and experiences that resonate.
+                    </UiTypographyP>
+                </div>
+
+            </div>
         </Container>
     </section>
 </template>
