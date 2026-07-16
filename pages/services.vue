@@ -145,7 +145,7 @@
     </section>
     <section class="py-32 bg-[#F8F9FA]">
         <Container class="space-y-16">
-            <div class="flex items-center justify-between gap-6">
+            <div class="flex flex-wrap items-center justify-between gap-6">
                 <div>
                     <span class="text-sm text-primary hanken tracking-widest">
                         HOW WE WORK
@@ -192,7 +192,35 @@
             </div>
         </Container>
     </section>
+
+        <Container class="py-16">
+        <div class="relative overflow-hidden bg-primary p-8 md:p-12 lg:p-16 xl:p-24 rounded-3xl flex items-center justify-between flex-wrap gap-8">
+            <MessagesSquare
+                color="white"
+                class="h-[250px] w-[250px] opacity-10 absolute -top-8 -right-8 pointer-events-none"
+            />
+
+            <div class="relative z-10 space-y-4 text-white max-w-xl">
+                <UiTypographyH2>
+                    Have a project in mind? <br>
+                    <em class="text-pink">Let's build it together.</em>
+                </UiTypographyH2>
+                <UiTypographyP>
+                    We're currently accepting new projects and would love to hear about yours.
+                    Get in touch to schedule a free consultation.
+                </UiTypographyP>
+            </div>
+
+            <NuxtLink
+                to="/contact"
+                class="relative z-10 bg-pink text-primary rounded-full py-4 px-8 gap-4 flex items-center hover:-translate-y-2 duration-200 ease-in-out"
+            >
+                Get in Touch
+                <ArrowRight class="text-primary" />
+            </NuxtLink>
+        </div>
+    </Container>
 </template>
 <script setup>
-import { Rocket, ListChecks, CircleCheckBig, TrendingUp, LaptopMinimal } from '@lucide/vue';
+import { Rocket, ListChecks, CircleCheckBig, TrendingUp, LaptopMinimal, MessagesSquare } from '@lucide/vue';
 </script>
